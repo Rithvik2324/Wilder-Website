@@ -28,7 +28,13 @@ export function ToursExplorer({
   initialInterest?: string;
 }) {
   const startCategory =
-    initialCategory === "full-day" ? "Full Day" : initialCategory === "half-day" ? "Half Day" : "all";
+    initialCategory === "full-day"
+      ? "Full Day"
+      : initialCategory === "half-day"
+      ? "Half Day"
+      : initialCategory === "multi-day"
+      ? "Multi-day"
+      : "all";
 
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<string>(startCategory);
@@ -78,7 +84,7 @@ export function ToursExplorer({
       <div>
         <h3 className="mb-3 font-display text-sm font-bold uppercase tracking-wider text-ink">Category</h3>
         <div className="space-y-1.5">
-          {["all", "Full Day", "Half Day"].map((c) => (
+          {["all", "Full Day", "Half Day", "Multi-day"].map((c) => (
             <button
               key={c}
               onClick={() => setCategory(c)}

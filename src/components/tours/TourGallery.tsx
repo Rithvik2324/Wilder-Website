@@ -11,21 +11,35 @@ export function TourGallery({ images, alt, theme }: { images: string[]; alt: str
 
   const next = useCallback(() => setIdx((i) => (i + 1) % imgs.length), [imgs.length]);
   const prev = useCallback(() => setIdx((i) => (i - 1 + imgs.length) % imgs.length), [imgs.length]);
+  const close = useCallback(() => setOpen(false), []);
 
   useEffect(() => {
     if (!open) return;
+    const onClosePointer = (e: Event) => {
+      const target = e.target;
+      if (target instanceof Element && target.closest("[data-gallery-close]")) {
+        e.preventDefault();
+        close();
+      }
+    };
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") close();
       if (e.key === "ArrowRight") next();
       if (e.key === "ArrowLeft") prev();
     };
     document.body.style.overflow = "hidden";
+    document.addEventListener("pointerdown", onClosePointer, true);
+    document.addEventListener("click", onClosePointer, true);
+    document.addEventListener("touchend", onClosePointer, true);
     window.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = "";
+      document.removeEventListener("pointerdown", onClosePointer, true);
+      document.removeEventListener("click", onClosePointer, true);
+      document.removeEventListener("touchend", onClosePointer, true);
       window.removeEventListener("keydown", onKey);
     };
-  }, [open, next, prev]);
+  }, [open, close, next, prev]);
 
   const openAt = (i: number) => {
     setIdx(i);
@@ -66,12 +80,38 @@ export function TourGallery({ images, alt, theme }: { images: string[]; alt: str
       </div>
 
       {open && (
-        <div className="fixed inset-0 z-[80] flex flex-col bg-ink/95 backdrop-blur">
-          <div className="flex items-center justify-between p-4 text-white">
+        <div className="fixed inset-0 z-[80] flex flex-col bg-ink/95 backdrop-blur" role="dialog" aria-modal="true">
+          <button
+            type="button"
+            data-gallery-close
+            aria-label="Close gallery"
+            onPointerUp={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              close();
+            }}
+            onMouseDown={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              close();
+            }}
+            onTouchEnd={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              close();
+            }}
+            onClick={(event) => {
+              event.preventDefault();
+              event.stopPropagation();
+              close();
+            }}
+            className="fixed right-4 top-4 z-[100] flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-white shadow-lift ring-1 ring-white/20 backdrop-blur transition hover:bg-white/25"
+          >
+            <X className="h-6 w-6" />
+          </button>
+
+          <div className="relative z-20 flex items-center justify-between p-4 pr-20 text-white">
             <span className="text-sm font-semibold">{idx + 1} / {imgs.length}</span>
-            <button onClick={() => setOpen(false)} aria-label="Close gallery" className="flex h-11 w-11 items-center justify-center rounded-full bg-white/10 transition hover:bg-white/20">
-              <X className="h-6 w-6" />
-            </button>
           </div>
           <div className="relative flex flex-1 items-center justify-center px-4 pb-4">
             <button onClick={prev} aria-label="Previous" className="absolute left-3 z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-white/20 md:left-8">

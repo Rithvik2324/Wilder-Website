@@ -42,17 +42,23 @@ export function Navbar() {
           )}
         >
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-2.5">
-            <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl shadow-lg transition-transform group-hover:rotate-12">
+          <Link href="/" className="group flex items-center gap-0">
+            <motion.span
+              initial={{ opacity: 0, scale: 0.92, y: -4 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              whileHover={{ scale: 1.07, rotate: -2, y: -2 }}
+              transition={{ type: "spring", stiffness: 280, damping: 18 }}
+              className="relative -my-4 -mr-2 flex h-[4.5rem] w-[4.5rem] items-center justify-center md:h-20 md:w-20"
+            >
               <Image
-                src="/belize_logo.jpeg"
+                src="/belize_new_logo.png"
                 alt="Wilder Belize logo"
                 fill
-                sizes="40px"
-                className="object-contain"
+                sizes="(max-width: 768px) 72px, 80px"
+                className="object-contain drop-shadow-[0_10px_18px_rgba(12,31,26,0.22)] transition-[filter] duration-300 group-hover:drop-shadow-[0_14px_26px_rgba(255,94,46,0.28)]"
                 priority
               />
-            </span>
+            </motion.span>
             <span className="leading-none">
               <span className={cn("block font-display text-base font-extrabold tracking-tight transition-colors", solid ? "text-ink" : "text-white")}>
                 Wilder Belize

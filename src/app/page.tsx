@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, ArrowUpRight, Check, Compass, Sparkles } from "lucide-react";
 import { Hero } from "@/components/home/Hero";
 import { Marquee } from "@/components/home/Marquee";
@@ -7,17 +8,9 @@ import { SectionHeading } from "@/components/SectionHeading";
 import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { TourCard } from "@/components/TourCard";
 import { SmartImage } from "@/components/SmartImage";
-import { Icon } from "@/components/Icon";
 import { site } from "@/data/site";
 import { featuredTours, fullDayTours, halfDayTours, allInterests } from "@/data/tours";
 import { HERO_IMAGES, MISC_IMAGES } from "@/lib/images";
-
-const VP_COLORS = [
-  "from-coral-500 to-coral-400",
-  "from-jungle-600 to-jungle-500",
-  "from-lagoon-500 to-lagoon-400",
-  "from-gold-500 to-gold-400",
-];
 
 export default function HomePage() {
   return (
@@ -25,30 +18,38 @@ export default function HomePage() {
       <Hero />
       <Marquee />
 
-      {/* Value props */}
+      {/* About Wilder */}
       <section className="section">
         <div className="container-page">
-          <Reveal>
-            <SectionHeading
-              align="center"
-              kicker="The Wilder difference"
-              title="Adventure, done the local way"
-              subtitle="We&apos;re not a call center. We&apos;re Belizeans who grew up on these rivers, ridges, and reefs — and we&apos;d love to show you around."
-            />
+          <Reveal className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+            <div className="relative overflow-hidden rounded-3xl shadow-lift">
+              <Image
+                src="/wilder_photo.jpeg"
+                alt="Wilder Belize guide portrait"
+                width={854}
+                height={1280}
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                className="aspect-[4/5] w-full object-cover"
+                priority
+              />
+            </div>
+
+            <div>
+              <SectionHeading
+                kicker="The Wilder difference"
+                title="About Wilder"
+                subtitle="Placeholder introduction about Wilder goes here. This section can tell guests who he is, where he grew up, why he started guiding, and what makes his approach to Belize adventures personal, local, and memorable."
+              />
+              <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft md:text-lg">
+                <p>
+                  Placeholder text for Wilder&apos;s story. Share a warm paragraph about his roots in Belize, his connection to the jungle, rivers, waterfalls, Maya sites, and the people who make each trip feel genuine.
+                </p>
+                <p>
+                  Add another short paragraph here about his guiding style, favorite places to take travelers, and the kind of experience guests can expect when they explore Belize with him.
+                </p>
+              </div>
+            </div>
           </Reveal>
-          <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {site.valueProps.map((vp, i) => (
-              <StaggerItem key={vp.title} className="h-full">
-                <div className="flex h-full flex-col rounded-3xl bg-white p-7 shadow-soft ring-1 ring-ink/5 transition hover:-translate-y-1 hover:shadow-lift">
-                  <span className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${VP_COLORS[i % 4]} text-white shadow-lg`}>
-                    <Icon name={vp.icon} className="h-7 w-7" />
-                  </span>
-                  <h3 className="mt-5 font-display text-lg font-bold text-ink">{vp.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-ink-soft">{vp.detail}</p>
-                </div>
-              </StaggerItem>
-            ))}
-          </Stagger>
         </div>
       </section>
 

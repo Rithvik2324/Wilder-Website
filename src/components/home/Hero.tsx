@@ -1,11 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion";
 import { ArrowRight, MessageCircle, Star, MapPin, ChevronDown } from "lucide-react";
 import { site } from "@/data/site";
-import { HERO_IMAGES } from "@/lib/images";
 
 const QUICK: { label: string; interest: string }[] = [
   { label: "ATV & Waterfalls", interest: "Water" },
@@ -15,11 +14,137 @@ const QUICK: { label: string; interest: string }[] = [
   { label: "Wildlife", interest: "Wildlife" },
 ];
 
+const headlineWords = ["Are", "you", "in", "Belize?"];
+const headlinePhrase = "Explore Belize the Wilder way";
+
+const wordReveal = {
+  hidden: { opacity: 0, y: 36, filter: "blur(14px)" },
+  show: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    filter: "blur(0px)",
+    transition: {
+      delay: 0.28 + i * 0.09,
+      duration: 0.72,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  }),
+};
+
+const letterReveal = {
+  hidden: { opacity: 0, y: 28, rotateX: -62, filter: "blur(10px)" },
+  show: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    rotateX: 0,
+    filter: "blur(0px)",
+    transition: {
+      delay: 0.72 + i * 0.022,
+      duration: 0.58,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  }),
+};
+
 export function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [useCanvasVideo, setUseCanvasVideo] = useState(true);
   const reduce = useReducedMotion();
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 700], [0, 160]);
   const fade = useTransform(scrollY, [0, 420], [1, 0]);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    const isSafari = /^((?!chrome|android|crios|fxios).)*safari/i.test(navigator.userAgent);
+    const shouldUseCanvas = isIOS || isSafari;
+    setUseCanvasVideo(shouldUseCanvas);
+
+    video.defaultMuted = true;
+    video.muted = true;
+    video.playsInline = true;
+    video.setAttribute("muted", "");
+    video.setAttribute("playsinline", "");
+    video.setAttribute("webkit-playsinline", "");
+    video.setAttribute("x-webkit-airplay", "deny");
+
+    const playVideo = () => {
+      if (!document.hidden) {
+        window.requestAnimationFrame(() => {
+          void video.play().catch(() => undefined);
+        });
+      }
+    };
+
+    playVideo();
+    video.addEventListener("loadeddata", playVideo);
+    video.addEventListener("canplay", playVideo);
+    document.addEventListener("visibilitychange", playVideo);
+    window.addEventListener("pageshow", playVideo);
+
+    let frame = 0;
+
+    if (shouldUseCanvas) {
+      const canvas = canvasRef.current;
+      const context = canvas?.getContext("2d");
+
+      const resizeCanvas = () => {
+        if (!canvas) return;
+        const rect = canvas.getBoundingClientRect();
+        const ratio = window.devicePixelRatio || 1;
+        canvas.width = Math.max(1, Math.round(rect.width * ratio));
+        canvas.height = Math.max(1, Math.round(rect.height * ratio));
+      };
+
+      const drawVideo = () => {
+        if (canvas && context && video.readyState >= 2) {
+          const videoRatio = video.videoWidth / video.videoHeight;
+          const canvasRatio = canvas.width / canvas.height;
+          let drawWidth = canvas.width;
+          let drawHeight = canvas.height;
+          let drawX = 0;
+          let drawY = 0;
+
+          if (videoRatio > canvasRatio) {
+            drawWidth = canvas.height * videoRatio;
+            drawX = (canvas.width - drawWidth) / 2;
+          } else {
+            drawHeight = canvas.width / videoRatio;
+            drawY = (canvas.height - drawHeight) / 2;
+          }
+
+          context.drawImage(video, drawX, drawY, drawWidth, drawHeight);
+        }
+
+        frame = window.requestAnimationFrame(drawVideo);
+      };
+
+      resizeCanvas();
+      window.addEventListener("resize", resizeCanvas);
+      frame = window.requestAnimationFrame(drawVideo);
+
+      return () => {
+        window.cancelAnimationFrame(frame);
+        window.removeEventListener("resize", resizeCanvas);
+        video.removeEventListener("loadeddata", playVideo);
+        video.removeEventListener("canplay", playVideo);
+        document.removeEventListener("visibilitychange", playVideo);
+        window.removeEventListener("pageshow", playVideo);
+      };
+    }
+
+    return () => {
+      window.cancelAnimationFrame(frame);
+      video.removeEventListener("loadeddata", playVideo);
+      video.removeEventListener("canplay", playVideo);
+      document.removeEventListener("visibilitychange", playVideo);
+      window.removeEventListener("pageshow", playVideo);
+    };
+  }, []);
 
   return (
     <section className="relative flex min-h-[100svh] items-center overflow-hidden">
@@ -30,7 +155,39 @@ export function Hero() {
           animate={reduce ? undefined : { scale: [1, 1.12] }}
           transition={{ duration: 22, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
         >
-          <Image src={HERO_IMAGES.coast} alt="Aerial view of the turquoise Caribbean coast at Placencia, Belize" fill priority sizes="100vw" className="object-cover" />
+          <canvas
+            ref={canvasRef}
+            className={`absolute inset-0 h-full w-full ${useCanvasVideo ? "block" : "hidden"}`}
+            aria-hidden="true"
+          />
+          <video
+            ref={videoRef}
+            className={`hero-background-video pointer-events-none absolute inset-0 h-full w-full object-cover ${useCanvasVideo ? "opacity-0" : "opacity-100"}`}
+            autoPlay
+            muted
+            loop
+            playsInline
+            disablePictureInPicture
+            disableRemotePlayback
+            controlsList="nodownload nofullscreen noplaybackrate"
+            preload="auto"
+            tabIndex={-1}
+            onLoadedMetadata={(event) => {
+              event.currentTarget.defaultMuted = true;
+              event.currentTarget.muted = true;
+              event.currentTarget.setAttribute("muted", "");
+              event.currentTarget.setAttribute("playsinline", "");
+              event.currentTarget.setAttribute("webkit-playsinline", "");
+              event.currentTarget.setAttribute("x-webkit-airplay", "deny");
+              void event.currentTarget.play().catch(() => undefined);
+            }}
+            onCanPlay={(event) => {
+              void event.currentTarget.play().catch(() => undefined);
+            }}
+            aria-hidden="true"
+          >
+            <source src="/images/belize-background-web.mp4" type="video/mp4" />
+          </video>
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/35 to-ink/85" />
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-sand-50 to-transparent" />
@@ -48,10 +205,45 @@ export function Hero() {
             <MapPin className="h-3.5 w-3.5 text-coral-300" /> {site.hero.kicker}
           </span>
 
-          <h1 className="mt-6 font-display text-5xl font-extrabold leading-[0.98] text-white drop-shadow-sm sm:text-6xl md:text-7xl lg:text-[5.2rem]">
-            Roam Belize,
-            <br />
-            the <span className="bg-gradient-to-r from-coral-300 via-coral-400 to-gold-400 bg-clip-text text-transparent">Wilder Way</span>
+          <h1
+            aria-label="Are you in Belize? Explore Belize the Wilder way"
+            className="mt-6 font-display text-5xl font-extrabold leading-[0.98] text-white drop-shadow-sm sm:text-6xl md:text-7xl lg:text-[5.2rem]"
+          >
+            <span aria-hidden="true" className="block overflow-hidden pb-1">
+              {headlineWords.map((word, i) => (
+                <motion.span
+                  key={word}
+                  custom={i}
+                  initial={reduce ? false : "hidden"}
+                  animate={reduce ? undefined : "show"}
+                  variants={wordReveal}
+                  className="inline-block will-change-transform"
+                >
+                  {word}
+                  {i < headlineWords.length - 1 ? "\u00A0" : ""}
+                </motion.span>
+              ))}
+            </span>
+            <motion.span
+              aria-hidden="true"
+              initial={reduce ? false : { opacity: 0.9 }}
+              animate={reduce ? undefined : { opacity: 1, textShadow: ["0 0 0 rgba(255,165,79,0)", "0 0 22px rgba(255,165,79,0.28)", "0 0 0 rgba(255,165,79,0)"] }}
+              transition={{ delay: 1.25, duration: 4.8, repeat: Infinity, ease: "easeInOut" }}
+              className="block origin-left overflow-hidden pb-2 pt-1 [perspective:900px]"
+            >
+              {headlinePhrase.split("").map((char, i) => (
+                <motion.span
+                  key={`${char}-${i}`}
+                  custom={i}
+                  initial={reduce ? false : "hidden"}
+                  animate={reduce ? undefined : "show"}
+                  variants={letterReveal}
+                  className="inline-block bg-gradient-to-r from-coral-300 via-gold-300 to-lagoon-200 bg-[length:220%_220%] bg-clip-text text-transparent animate-gradient will-change-transform"
+                >
+                  {char === " " ? "\u00A0" : char}
+                </motion.span>
+              ))}
+            </motion.span>
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">{site.hero.subheadline}</p>

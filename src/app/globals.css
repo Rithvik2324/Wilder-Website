@@ -107,6 +107,16 @@
   100% { box-shadow: 0 0 0 0 rgb(255 94 46 / 0); }
 }
 
+.hero-background-video::-webkit-media-controls,
+.hero-background-video::-webkit-media-controls-panel,
+.hero-background-video::-webkit-media-controls-play-button,
+.hero-background-video::-webkit-media-controls-start-playback-button,
+.hero-background-video::-webkit-media-controls-enclosure {
+  display: none !important;
+  opacity: 0 !important;
+  -webkit-appearance: none;
+}
+
 /* ============================================================
    Base
    ============================================================ */

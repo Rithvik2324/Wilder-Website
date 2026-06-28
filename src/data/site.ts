@@ -25,7 +25,7 @@ export const site = {
   "hero": {
     "kicker": "Placencia Village, Belize",
     "headline": "Roam Belize, the Wilder Way",
-    "subheadline": "From jungle waterfalls and Maya temples to the warm Caribbean, our local guides take you deep into the real Belize.",
+    "subheadline": "From jungle waterfalls and Maya temples to the warm Caribbean,  Wilder takes you deep into the real Belize.",
     "ctaPrimary": "Browse Adventures",
     "ctaSecondary": "Talk to a Guide"
   },
