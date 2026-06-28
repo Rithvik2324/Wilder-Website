@@ -26,7 +26,7 @@ const wordReveal = {
     transition: {
       delay: 0.28 + i * 0.09,
       duration: 0.72,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   }),
 };
@@ -41,7 +41,7 @@ const letterReveal = {
     transition: {
       delay: 0.72 + i * 0.022,
       duration: 0.58,
-      ease: [0.22, 1, 0.36, 1],
+      ease: [0.22, 1, 0.36, 1] as const,
     },
   }),
 };
