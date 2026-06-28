@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X, Compass, Phone } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { company } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -29,10 +30,6 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
-
   const solid = scrolled;
 
   return (
@@ -46,8 +43,15 @@ export function Navbar() {
         >
           {/* Logo */}
           <Link href="/" className="group flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-jungle-600 to-lagoon-500 text-white shadow-lg transition-transform group-hover:rotate-12">
-              <Compass className="h-5 w-5" />
+            <span className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl shadow-lg transition-transform group-hover:rotate-12">
+              <Image
+                src="/belize_logo.jpeg"
+                alt="Wilder Belize logo"
+                fill
+                sizes="40px"
+                className="object-contain"
+                priority
+              />
             </span>
             <span className="leading-none">
               <span className={cn("block font-display text-base font-extrabold tracking-tight transition-colors", solid ? "text-ink" : "text-white")}>
@@ -146,6 +150,7 @@ export function Navbar() {
                     <li key={item.href}>
                       <Link
                         href={item.href}
+                        onClick={() => setOpen(false)}
                         className={cn(
                           "flex items-center rounded-xl px-4 py-3 text-lg font-bold transition-colors",
                           active ? "bg-jungle-600 text-white" : "text-ink hover:bg-jungle-50",
@@ -158,7 +163,7 @@ export function Navbar() {
                 })}
               </ul>
               <div className="mt-auto space-y-3">
-                <Link href="/tours" className="btn btn-primary w-full">Book an Adventure</Link>
+                <Link href="/tours" onClick={() => setOpen(false)} className="btn btn-primary w-full">Book an Adventure</Link>
                 <a href={`tel:${company.phones[0].replace(/\s/g, "")}`} className="btn btn-ghost w-full">
                   <Phone className="h-4 w-4" /> {company.phones[0]}
                 </a>
