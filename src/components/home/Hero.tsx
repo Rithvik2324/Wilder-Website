@@ -32,7 +32,7 @@ const wordReveal = {
 };
 
 const letterReveal = {
-  hidden: { opacity: 0, y: 28, rotateX: -62, filter: "blur(10px)" },
+  hidden: { opacity: 0, y: 28, rotateX: -62, filter: "blur(5px)" },
   show: (i: number) => ({
     opacity: 1,
     y: 0,
@@ -190,7 +190,7 @@ export function Hero() {
           </video>
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-ink/70 via-ink/35 to-ink/85" />
-        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-sand-50 to-transparent" />
+        {/* <div className="absolute inset-x-0 bottom-0 h-12 bg-gradient-to-t from-sand-50 to-transparent" /> smoke effect */}
       </motion.div>
 
       {/* Content */}

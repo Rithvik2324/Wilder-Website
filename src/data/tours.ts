@@ -2047,22 +2047,115 @@ export const tours: Tour[] = [
     "Wildlife"
   ],
 
-  image: "/images/themes/package-placeholder.jpg",
+  image: "/images/7-days-1.jpeg",
 
   gallery: [
-    "/images/themes/package-placeholder-1.jpg",
-    "/images/themes/package-placeholder-2.jpg",
-    "/images/themes/package-placeholder-3.jpg",
-    "/images/themes/package-placeholder-4.jpg"
+    "/images/7-days-1.jpeg",
+    "/images/7-days-2.jpeg",
+    "/images/7-days-3.jpeg",
+    "/images/7-days-4.jpeg"
+  ],
+  rating: 5.0,
+  reviews: 0,
+  featured: true,
+  theme: "package"
+},
+
+  {
+  slug: "wilder-belize-adventures-ultimate-private-3-day-experience",
+  name: "Wilder Belize Adventures – Ultimate Private 3-Day Inland & Jungle Experience",
+  category: "Multi-day",
+  price: 725,
+  duration: "3 Days",
+  durationHours: 72,
+  difficulty: "Easy-Moderate",
+  groupSize: "3-10 guests",
+  tagline: "Luxury inland adventures with the perfect blend of thrill and relaxation.",
+  shortDescription:
+    "Discover Belize's wild side on a premium 3-day experience featuring ATV jungle adventures, ziplining, river tubing, ancient Maya history, and the breathtaking Inland Blue Hole.",
+
+  description:
+    "Designed for discerning travellers, this luxury 3-day experience blends adrenaline, culture, and comfort with upgraded service, professional guiding, and premium inclusions. Explore Belize's spectacular inland attractions without compromising on quality, convenience, or exclusivity.\n\nThis experience is designed to be completed within a flexible 5-day pre-arranged schedule, allowing you and your family or friends to enjoy rest days between activities. Starting from USD $725 per person, the package accommodates groups of 3–10 guests, with a 10% discount available for groups of six or more.",
+
+  highlights: [
+    "Luxury private 3-day inland adventure",
+    "ATV Jungle & Hidden Waterfall Experience",
+    "Zipline & River Tubing Adventure",
+    "Explore Xunantunich Maya Ruins",
+    "Swim in the famous Inland Blue Hole",
+    "Licensed professional guides",
+    "Flexible 5-day schedule with rest days",
+    "10% discount for groups of 6 or more"
+  ],
+
+  included: [
+    "Round-trip air-conditioned transportation",
+    "Professional licensed guides",
+    "All park entrance fees",
+    "ATV rental and upgraded safety equipment",
+    "Zipline equipment",
+    "Bottled water and refreshments",
+    "Choice of lunch on Day 3",
+    "Priority access where available"
+  ],
+
+  bring: [
+    "Comfortable hiking shoes",
+    "Swimwear",
+    "Water shoes",
+    "Quick-dry clothing",
+    "Hat",
+    "Sunscreen",
+    "Bug spray",
+    "Towel",
+    "Camera",
+    "Reusable water bottle"
+  ],
+
+  itinerary: [
+    {
+      title: "Day 1 – ATV Jungle & Hidden Waterfall Experience",
+      detail:
+        "8:00 AM – 1:00 PM. Begin your Belize adventure with an ATV expedition through scenic jungle trails, river crossings, and deep rainforest leading to a secluded waterfall. Enjoy time to swim, relax, and soak in the untouched surroundings. Includes round-trip transportation, ATV, upgraded safety gear, licensed guide, park fees, bottled water, and light refreshments."
+    },
+    {
+      title: "Day 2 – Zipline & River Tubing Adventure",
+      detail:
+        "8:00 AM – 1:00 PM. Soar above Belize's rainforest canopy on an exciting zipline course before floating peacefully down a jungle river through caves and lush vegetation. Includes transportation, priority access, zipline equipment, professional guide, park fees, and bottled water."
+    },
+    {
+      title: "Day 3 – Xunantunich & Inland Blue Hole Expedition",
+      detail:
+        "7:00 AM – 4:00 PM. Explore the magnificent Maya city of Xunantunich with a licensed guide before climbing El Castillo for panoramic views across Belize and Guatemala. Continue to the beautiful Inland Blue Hole for a refreshing swim in crystal-clear jungle waters. Includes transportation, licensed guide, choice of lunch, park fees, bottled water, and refreshments."
+    }
+  ],
+
+  bestFor: [
+    "Adventure",
+    "Culture",
+    "Nature",
+    "Families"
+  ],
+
+  image: "/images/themes/3-days-3.png",
+
+  gallery: [
+    "/images/themes/3-days-1.jpeg",
+    "/images/themes/3-days-2.png",
+    "/images/themes/3-days-3.png",
+    "/images/themes/3-days-4.png"
   ],
 
   rating: 5.0,
   reviews: 0,
   featured: true,
   theme: "package"
-}
+},
+
+  
   
 ];
+
 
 export const fullDayTours = tours.filter((t) => t.category === "Full Day");
 export const halfDayTours = tours.filter((t) => t.category === "Half Day");
