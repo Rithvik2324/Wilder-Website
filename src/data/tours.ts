@@ -2151,6 +2151,109 @@ export const tours: Tour[] = [
   featured: true,
   theme: "package"
 },
+{
+  slug: "wilder-belize-adventures-ultimate-private-5-day-experience",
+  name: "Wilder Belize Adventures – Ultimate Private 5-Day Inland & Extreme Adventure Expedition",
+  category: "Multi-day",
+  price: 1000,
+  duration: "5 Days",
+  durationHours: 120,
+  difficulty: "Easy-Moderate",
+  groupSize: "2-12 guests",
+  tagline: "Five unforgettable days exploring Belize's wildest inland adventures.",
+  shortDescription:
+    "Experience Belize through five days of thrilling adventures including ATV expeditions, ziplining, river tubing, ATM Cave exploration, Maya chocolate making, waterfalls, and the ancient city of Xunantunich.",
+
+  description:
+    "Experience the very best of Belize in five unforgettable days packed with adrenaline, culture, and natural wonders. This premium itinerary combines thrilling jungle adventures, ancient Maya history, breathtaking landscapes, and authentic local experiences designed for travellers seeking more than just a vacation.\n\nThe package is designed to be completed within a flexible 7-day schedule, allowing time for rest between adventures. Starting at USD $1000 per person, this experience accommodates groups of 2 to 12 guests while delivering seamless transportation, expert local guides, and unforgettable memories.",
+
+  highlights: [
+    "5-day premium inland adventure package",
+    "ATV Hidden Waterfall Expedition",
+    "Zipline & River Tubing Adventure",
+    "Full-day ATM Cave Exploration",
+    "Traditional Maya Chocolate Making Experience",
+    "Jungle Waterfall Swim",
+    "Explore Xunantunich Maya Ruins",
+    "Swim in the Inland Blue Hole",
+    "Licensed professional guides",
+    "Private transportation throughout"
+  ],
+
+  included: [
+    "Round-trip transportation",
+    "Professional licensed guides",
+    "All entrance fees",
+    "ATV rental and safety equipment",
+    "Zipline equipment",
+    "Helmet & headlamp for ATM Cave",
+    "Chocolate-making experience",
+    "Lunch on full-day tours",
+    "Bottled water and refreshments"
+  ],
+
+  bring: [
+    "Comfortable hiking shoes",
+    "Swimwear",
+    "Water shoes",
+    "Quick-dry clothing",
+    "Hat",
+    "Sunscreen",
+    "Bug spray",
+    "Towel",
+    "Camera",
+    "Reusable water bottle"
+  ],
+
+  itinerary: [
+    {
+      title: "Day 1 – ATV Hidden Waterfall Expedition",
+      detail:
+        "8:00 AM – 1:00 PM. Ride ATVs through Belize's rugged jungle trails, splash through river crossings, and discover a secluded rainforest waterfall where you'll enjoy a refreshing swim. Includes transportation, ATV, safety gear, guide, park fees, and bottled water."
+    },
+    {
+      title: "Day 2 – Zipline + River Tubing",
+      detail:
+        "8:00 AM – 1:00 PM. Soar above the rainforest canopy before floating peacefully along a jungle river surrounded by lush vegetation. Includes transportation, equipment, guide, and park fees."
+    },
+    {
+      title: "Day 3 – ATM Cave Exploration",
+      detail:
+        "6:30 AM – 5:00 PM. Explore Belize's most iconic Maya cave with hiking, swimming, and cave exploration while discovering ceremonial chambers, ancient artifacts, and the famous Crystal Maiden. Includes transportation, licensed guide, helmet, headlamp, lunch, park fees, and bottled water."
+    },
+    {
+      title: "Day 4 – Chocolate & Waterfall Cultural Experience",
+      detail:
+        "8:00 AM – 2:00 PM. Learn traditional Maya chocolate-making techniques before enjoying a relaxing swim beneath a scenic jungle waterfall. Includes transportation, chocolate experience, entrance fees, guide, and bottled water."
+    },
+    {
+      title: "Day 5 – Xunantunich + Inland Blue Hole",
+      detail:
+        "7:00 AM – 4:00 PM. Discover the magnificent Maya city of Xunantunich, climb El Castillo for spectacular panoramic views, and finish your Belize adventure with a refreshing swim in the crystal-clear Inland Blue Hole. Includes transportation, lunch, park fees, guide, and bottled water."
+    }
+  ],
+
+  bestFor: [
+    "Adventure",
+    "Culture",
+    "Nature",
+    "Families"
+  ],
+
+  image: "/images/5-days-1.jpg",
+
+  gallery: [
+    "/images/5-days-1.jpg",
+    "/images/5-days-2.jpg",
+    "/images/5-days-3.jpg",
+    "/images/5-days-4.jpg"
+  ],
+
+  rating: 5.0,
+  reviews: 0,
+  featured: true,
+  theme: "package"
+}
 
   
   
