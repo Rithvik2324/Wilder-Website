@@ -6,6 +6,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { InquiryForm } from "@/components/InquiryForm";
 import { site } from "@/data/site";
 import { MISC_IMAGES } from "@/lib/images";
+import { TransferSlideshow } from "@/components/TransferSlideshow";
 
 export const metadata: Metadata = {
   title: "Private Ground Transfers",
@@ -61,7 +62,24 @@ export default function TransfersPage() {
         <div className="container-page grid gap-10 lg:grid-cols-2">
           <Reveal>
             <div className="rounded-3xl bg-jungle-950 p-8 text-white">
-              <h2 className="font-display text-2xl font-bold text-white">Every transfer includes</h2>
+              <TransferSlideshow />
+
+              <h2 className="mt-6 font-display text-2xl font-bold text-white">
+                Travel in Comfort
+              </h2>
+              <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div className="space-y-2 text-sm text-white/90">
+                  <p><span className="font-semibold text-white">$300 USD:</span> One-way (1–4 Persons)</p>
+                  <p><span className="font-semibold text-white">$30 USD:</span> Each additional Person</p>
+                  <p><span className="font-semibold text-white">Free:</span> Children under 10 years of age</p>
+                </div>
+
+                <div className="mt-4 border-t border-white/10 pt-4">
+                  <p className="text-xs leading-6 text-white/70">
+                    <span className="font-semibold text-white">Note:</span> All shuttle services must be booked in advance with a specific pick-up location, destination, and scheduled time. A non-refundable deposit of 50% is required to confirm your booking. We recommend reserving your shuttle as early as possible, especially for round-trip transfers, as availability is limited.
+                  </p>
+                </div>
+              </div>
               <ul className="mt-6 space-y-3.5">
                 {t.included.map((i) => (
                   <li key={i} className="flex gap-3 text-white/85">

@@ -72,65 +72,55 @@ export const site = {
   "aboutShort": "Wilder Belize Adventures is a family-run outfitter rooted in Placencia Village, sending travelers into the waterfalls, jungle, and Maya country of southern Belize. Our born-and-raised guides turn a day trip into the kind of story you tell for years.",
   "aboutLong": "Wilder started the way most good things in Placencia do: on the water and around a fire. Growing up on this thin spit of sand between the lagoon and the Caribbean, our family spent its days fishing the flats, hiking the Stann Creek foothills, and four-wheeling muddy trails to swimming holes that don't have names on any map. When travelers kept asking us to show them the Belize we knew, we stopped pointing them elsewhere and started guiding them ourselves.\n\nToday we run the trips we'd want our own friends on. A jungle ATV ride to the cascades at Mayan King, where you cool off in the spray after conquering the trail. A trek through the Cockscomb Basin, the world's first jaguar reserve, listening for howler monkeys in the canopy. The slow river glide into Monkey River, the climb up Xunantunich for the view across the valley, the headlamp-lit wade into ATM cave past Maya pottery and the bones of ancient ceremonies. When you want to cross into Guatemala, we'll get you to the great temples of Tikal and back.\n\nWhat ties it together is the people leading you. Our guides were raised on these landscapes, certified for the wild places they take you, and genuinely glad to share them. They'll name the bird before you can lift your camera, read a jaguar track in the mud, and have the cooler stocked for the ride home. That's the Wilder way: real Belize, real Belizeans, and the kind of adventure you don't get from a brochure.",
   "stats": [
-    {
-      "value": "15+",
-      "label": "Years guiding Belize"
-    },
-    {
-      "value": "4.9",
-      "label": "Average review rating"
-    },
-    {
-      "value": "12,000+",
-      "label": "Travelers guided"
-    },
-    {
-      "value": "24",
-      "label": "Tours & excursions"
-    }
   ],
   "testimonials": [
     {
-      "name": "Megan Vasquez",
-      "location": "Austin, USA",
+      "name": "riverafm",
+      "location": "Humble, Texas",
       "rating": 5,
-      "text": "The ATV ride to Mayan King Falls was the highlight of our whole trip. Our guide Dario took the muddy sections slow with us first-timers, then let us rip on the open stretches, and that swim under the waterfall afterward was unreal.",
-      "tour": "Mayan King Jungle ATV & Waterfall"
+      "text": "Outstanding tour experience! Our guide was knowledgeable, engaging, and passionate about Belize’s history, wildlife, and",
+      "tour": "Xunantunich and Cave Tubing",
+      "link": "https://www.tripadvisor.in/ShowUserReviews-g291977-d25566275-r1064589313-Wilder_Belize_Adventures-Placencia_Placencia_Peninsula_Stann_Creek.html"
     },
     {
-      "name": "James Whitfield",
-      "location": "Manchester, UK",
+      "name": "Culture250175",
+      "location": "Minneapolis, Minnesota",
       "rating": 5,
-      "text": "We did the Cockscomb Basin hike hoping just to see the rainforest and ended up tracking a fresh jaguar print with our guide. He heard the howler monkeys before any of us and knew exactly where to look. Worth every minute.",
-      "tour": "Cockscomb Basin Jaguar Reserve Hike"
+      "text": "Best tour of our trip. I can’t say enough about our tour guide, Wilder. He made the trip fun and was incredibly knowledgeable and friendly, making us all feel welcome.",
+      "tour": "Xunantunich and Cave Tubing",
+      "link": "https://www.tripadvisor.in/ShowUserReviews-g291977-d25566275-r1057841432-Wilder_Belize_Adventures-Placencia_Placencia_Peninsula_Stann_Creek.html"
     },
     {
-      "name": "Sofia Bianchi",
-      "location": "Milan, Italy",
+      "name": "Michaela S",
+      "location": "Hanover, Minnesota",
       "rating": 5,
-      "text": "ATM cave is not for the faint of heart and I am so glad we booked with Wilder. Our guide was calm, knowledgeable about the Maya history, and made me feel safe wading through the water in the dark. Seeing the crystal maiden was something I will never forget.",
-      "tour": "ATM Cave Expedition"
+      "text": "Beyond thrilled with our experience Wilder goes above and beyond to make sure everyone is having a good time extremely professional knowledgeable and has so many interesting stories",
+      "tour": "ATM Caves Exploration from Placencia",
+      "link": "https://www.tripadvisor.in/Profile/msnickers"
     },
     {
-      "name": "Robert Tanaka",
-      "location": "Vancouver, Canada",
+      "name": "Jasmine",
+      "location": "San Jose, California",
       "rating": 5,
-      "text": "The Monkey River boat trip was perfect for our family. The kids loved spotting crocodiles and iguanas, and the guide pulled the boat over so we could watch a troop of howlers right above us. Easy pickup from our Placencia hotel too.",
-      "tour": "Monkey River Wildlife Safari"
+      "text": "We did the water fall tour and it was AMAZING!!! wilder told us all about the birds we saw on our way to the waterfall, the hike was really nice and the waterfall was STUNNING, the water felt really nice especially after the hike. Wilder made sure everything was taken care of the entire time. Thank you Wilder the greatest experience in Belize!!!",
+      "tour": " Nim Li Punit + Chocolate + Waterfall from Placencia",
+      "link": "https://www.tripadvisor.com/Attraction_Review-g291977-d25566275-Reviews-Wilder_Belize_Adventures-Placencia_Placencia_Peninsula_Stann_Creek.html"
     },
     {
-      "name": "Hannah Pierce",
-      "location": "Denver, USA",
-      "rating": 4,
-      "text": "Long day getting to Tikal and back across the Guatemala border, but the temples are staggering and Wilder handled all the crossing logistics so we never had to stress. Climbing Temple IV above the jungle canopy was the trip of a lifetime.",
-      "tour": "Tikal Day Trip (Guatemala)"
+      "name": "Veronica C",
+      "location": "Verified Traveler",
+      "rating": 5,
+      "text": "We had a wonderful experience while visiting Belize. We decided on horseback riding and river tubing. Wilder was so professional and down to earth. The conversation and history shared during the ride was a bonus. We had a great time at both locations and lunch was great. He ordered ahead and we were able to try different items from the menu. Highly recommend booking an experience with him and his team!",
+      "tour": "Tour to Horseback Riding & Cave Tubing Adventure from Placencia",
+      "link": "https://www.tripadvisor.com/Attraction_Review-g291977-d25566275-Reviews-Wilder_Belize_Adventures-Placencia_Placencia_Peninsula_Stann_Creek.html"
     },
     {
-      "name": "Daniel Okafor",
-      "location": "London, UK",
+      "name": "Jon",
+      "location": "Verified Traveler",
       "rating": 5,
-      "text": "Climbed Xunantunich in the morning and the view from El Castillo over the Mopan River valley gave me chills. Our guide grew up nearby and told us stories about the site you would never get from a guidebook. Booking and transfer from Placencia were seamless.",
-      "tour": "Xunantunich Maya Ruins Tour"
+      "text": "We had Zane as our guide on the Monkey Rivers tour, he was excellent, how he spotted some of the wildlife hidden in the undergrowth I don't know.He took us to see - Manatee, Howler Monkeys, Turtles, Crocodiles, King Fishers and Iguanas.,It was a brilliant day out, HIGHLY RECOMMENDED 🥳🥳🥳🥳",
+      "tour": "BEST RIVER MANGROVE TOUR",
+      "link": "https://www.tripadvisor.com/Attraction_Review-g291977-d25566275-Reviews-Wilder_Belize_Adventures-Placencia_Placencia_Peninsula_Stann_Creek.html"
     }
   ],
   "faqs": [
@@ -196,6 +186,12 @@ export const site = {
   "transfer": {
     "title": "Transfers & Ground Transport",
     "description": "Skip the guesswork of getting around southern Belize and let us drive. Our drivers know every turn of the Hummingbird and Southern Highways, and our air-conditioned vehicles get you door to door so your adventure starts the moment you arrive.",
+    "slideshowImages": [
+      "/images/transfer-1.jpeg",
+      "/images/transfer-2.jpeg",
+      "/images/transfer-3.jpeg",
+      "/images/transfer-4.jpeg"
+    ],
     "routes": [
       {
         "from": "Belize City (BZE Airport)",
@@ -235,12 +231,7 @@ export const site = {
       }
     ],
     "included": [
-      "Private air-conditioned vehicle",
-      "Professional local driver",
-      "Hotel and resort door-to-door service",
-      "Bottled water on board",
-      "Luggage assistance",
-      "Flexible pickup times for early or late flights"
+    
     ]
   },
   "newsletterPitch": "Sign up for the Wilder newsletter and get insider Belize travel tips, seasonal trip ideas, and first dibs on new adventures and deals."

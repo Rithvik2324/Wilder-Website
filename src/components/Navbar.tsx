@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X, Phone } from "lucide-react";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaTripadvisor } from "react-icons/fa";
 import { company } from "@/data/site";
 import { cn } from "@/lib/utils";
 
@@ -16,6 +17,13 @@ const NAV = [
   { href: "/about", label: "About" },
   { href: "/travelers-info", label: "Travelers Info" },
   { href: "/contact", label: "Contact" },
+];
+
+const SOCIALS = [
+  { href: "https://www.facebook.com/wilderbelizeadventures", label: "Facebook", Icon: FaFacebookF },
+  { href: "https://www.instagram.com/wilderbelizeadventures", label: "Instagram", Icon: FaInstagram },
+  { href: "https://api.whatsapp.com/send/?phone=5016501003&text&type=phone_number&app_absent=0", label: "WhatsApp", Icon: FaWhatsapp },
+  { href: "https://www.tripadvisor.com/Attraction_Review-g291977-d25566275-Reviews-Wilder_Belize_Adventures-Placencia_Placencia_Peninsula_Stann_Creek.html", label: "TripAdvisor", Icon: FaTripadvisor },
 ];
 
 export function Navbar() {
@@ -108,6 +116,25 @@ export function Navbar() {
               <Phone className="h-4 w-4" />
               <span className="hidden xl:inline">{company.phones[0]}</span>
             </a>
+            <div className="hidden items-center gap-1 md:flex">
+              {SOCIALS.map(({ href, label, Icon }) => (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className={cn(
+                    "flex h-9 w-9 items-center justify-center rounded-full transition-all duration-200 hover:scale-110",
+                    solid
+                      ? "text-ink-soft hover:bg-jungle-100 hover:text-jungle-700"
+                      : "text-white/85 hover:bg-white/10 hover:text-white",
+                  )}
+                >
+                  <Icon className="h-4 w-4" />
+                </a>
+              ))}
+            </div>
             <Link href="/tours" className="btn btn-primary hidden h-10 px-5 py-0 text-sm sm:inline-flex">
               Book Now
             </Link>
@@ -169,6 +196,20 @@ export function Navbar() {
                 })}
               </ul>
               <div className="mt-auto space-y-3">
+                <div className="flex justify-center gap-4 pb-2">
+                  {SOCIALS.map(({ href, label, Icon }) => (
+                    <a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={label}
+                      className="flex h-10 w-10 items-center justify-center rounded-full bg-jungle-50 text-jungle-700 transition-transform hover:scale-110"
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  ))}
+                </div>
                 <Link href="/tours" onClick={() => setOpen(false)} className="btn btn-primary w-full">Book an Adventure</Link>
                 <a href={`tel:${company.phones[0].replace(/\s/g, "")}`} className="btn btn-ghost w-full">
                   <Phone className="h-4 w-4" /> {company.phones[0]}
