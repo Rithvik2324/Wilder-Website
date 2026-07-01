@@ -51,18 +51,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="bg-gradient-to-r from-jungle-700 to-jungle-600 py-14 text-white">
-        <div className="container-page grid grid-cols-2 gap-8 text-center md:grid-cols-4">
-          {site.stats.map((s) => (
-            <Reveal key={s.label}>
-              <div className="font-display text-4xl font-extrabold md:text-5xl">{s.value}</div>
-              <div className="mt-1 text-sm font-semibold uppercase tracking-wider text-white/85">{s.label}</div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
       {/* Values */}
       <section className="section">
         <div className="container-page">
