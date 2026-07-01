@@ -160,19 +160,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats band */}
-      <section className="bg-gradient-to-r from-coral-500 to-coral-400 py-14 text-white">
-        <div className="container-page grid grid-cols-2 gap-8 text-center md:grid-cols-4">
-          {site.stats.map((s) => (
-            <Reveal key={s.label}>
-              <div>
-                <div className="font-display text-4xl font-extrabold md:text-5xl">{s.value}</div>
-                <div className="mt-1 text-sm font-semibold uppercase tracking-wider text-white/85">{s.label}</div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
-      </section>
 
       {/* Interests */}
       <section className="section">
