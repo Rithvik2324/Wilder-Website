@@ -274,12 +274,12 @@ export function Hero() {
                   <Star key={i} className="h-4 w-4 fill-gold-400 text-gold-400" />
                 ))}
               </div>
-              <span className="text-sm font-semibold text-white">4.9 on Tripadvisor</span>
+              <span className="text-sm font-semibold text-white">5.0 on Tripadvisor</span>
             </div>
             <div className="h-8 w-px bg-white/20" />
-            <div className="text-sm text-white/85"><span className="font-bold text-white">12,000+</span> travelers guided</div>
+            <div className="text-sm text-white/85"><span className="font-bold text-white">5,000+</span> travelers guided</div>
             <div className="h-8 w-px bg-white/20" />
-            <div className="text-sm text-white/85"><span className="font-bold text-white">15+</span> years in the wild</div>
+            <div className="text-sm text-white/85"><span className="font-bold text-white">8+</span> years in the wild</div>
           </div>
         </motion.div>
       </motion.div>

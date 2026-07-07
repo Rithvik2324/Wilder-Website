@@ -18,40 +18,6 @@ export default function HomePage() {
       <Hero />
       <Marquee />
 
-      {/* About Wilder */}
-      <section className="section">
-        <div className="container-page">
-          <Reveal className="grid items-center gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-            <div className="relative overflow-hidden rounded-3xl shadow-lift">
-              <Image
-                src="/wilder_photo.jpeg"
-                alt="Wilder Belize guide portrait"
-                width={854}
-                height={1280}
-                sizes="(max-width: 1024px) 100vw, 45vw"
-                className="aspect-[4/5] w-full object-cover"
-                priority
-              />
-            </div>
-
-            <div>
-              <SectionHeading
-                kicker="The Wilder difference"
-                title="About Wilder"
-                subtitle="Placeholder introduction about Wilder goes here. This section can tell guests who he is, where he grew up, why he started guiding, and what makes his approach to Belize adventures personal, local, and memorable."
-              />
-              <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-soft md:text-lg">
-                <p>
-                  Placeholder text for Wilder&apos;s story. Share a warm paragraph about his roots in Belize, his connection to the jungle, rivers, waterfalls, Maya sites, and the people who make each trip feel genuine.
-                </p>
-                <p>
-                  Add another short paragraph here about his guiding style, favorite places to take travelers, and the kind of experience guests can expect when they explore Belize with him.
-                </p>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
 
       {/* Featured tours */}
       <section className="bg-sand-100">
@@ -130,14 +96,18 @@ export default function HomePage() {
       <section className="section bg-jungle-950 text-white">
         <div className="container-page grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
-            <div className="relative">
-              <div className="overflow-hidden rounded-3xl shadow-lift">
-                <SmartImage src={MISC_IMAGES.about} alt="A small group exploring the Belize jungle with a local guide" theme="jungle-hike" className="aspect-[4/3]" sizes="(max-width:1024px) 100vw, 50vw" />
-              </div>
-              <div className="absolute -bottom-6 -right-4 hidden rounded-2xl bg-coral-500 px-6 py-5 text-white shadow-glow sm:block">
-                <div className="font-display text-3xl font-extrabold">15+</div>
-                <div className="text-xs font-semibold uppercase tracking-wider">Years guiding Belize</div>
-              </div>
+            <div className="overflow-hidden rounded-3xl shadow-lift">
+              <video
+                className="aspect-[4/3] w-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                controls
+              >
+                <source src="/videos/wilder_belize_guide.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </Reveal>
           <Reveal>

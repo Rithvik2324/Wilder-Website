@@ -185,7 +185,7 @@ export const site = {
   ],
   "transfer": {
     "title": "Transfers & Ground Transport",
-    "description": "Skip the guesswork of getting around southern Belize and let us drive. Our drivers know every turn of the Hummingbird and Southern Highways, and our air-conditioned vehicles get you door to door so your adventure starts the moment you arrive.",
+    "description": "Skip the guesswork of getting around southern Belize and let us drive. Our drivers know every turn of the Coastal plane and Southern Highways to Palencia, and our air-conditioned vehicles get you door to door so your adventure starts the moment you arrive.",
     "slideshowImages": [
       "/images/transfer-1.jpeg",
       "/images/transfer-2.jpeg",

@@ -33,7 +33,11 @@ export default function TransfersPage() {
           </Reveal>
 
           <Stagger className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {t.routes.map((r) => (
+            {[
+              { from: "Belize Airport", to: "Placencia", price: "$300", duration: "One-way" },
+              { from: "Placencia", to: "Belize Airport", price: "$300", duration: "One-way" },
+              { from: "Belize Airport ↔ Placencia", to: "Round Trip", price: "$275", originalPrice: "$300", duration: "Round Trip" },
+            ].map((r) => (
               <StaggerItem key={`${r.from}-${r.to}`}>
                 <div className="flex h-full flex-col rounded-3xl bg-white p-6 shadow-soft ring-1 ring-ink/5 transition hover:-translate-y-1 hover:shadow-lift">
                   <Car className="h-7 w-7 text-jungle-600" />
@@ -46,7 +50,16 @@ export default function TransfersPage() {
                   <div className="mt-4 flex items-end justify-between border-t border-ink/5 pt-4">
                     <div>
                       <span className="text-xs font-semibold uppercase text-ink-faint">From</span>
-                      <div className="font-display text-2xl font-extrabold text-ink">${r.price}</div>
+                      <div className="font-display text-2xl font-extrabold text-ink">
+                        {r.originalPrice ? (
+                          <>
+                            <span className="mr-2 text-lg text-ink-soft line-through">{r.originalPrice}</span>
+                            <span>{r.price}</span>
+                          </>
+                        ) : (
+                          r.price
+                        )}
+                      </div>
                     </div>
                     <span className="rounded-full bg-jungle-50 px-3 py-1 text-xs font-bold text-jungle-700">{r.duration}</span>
                   </div>
@@ -69,8 +82,8 @@ export default function TransfersPage() {
               </h2>
               <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-5">
                 <div className="space-y-2 text-sm text-white/90">
-                  <p><span className="font-semibold text-white">$300 USD:</span> One-way (1–4 Persons)</p>
-                  <p><span className="font-semibold text-white">$30 USD:</span> Each additional Person</p>
+                  <p><span className="font-semibold text-white">$275 USD:</span> One-way (1–4 Persons)</p>
+                  <p><span className="font-semibold text-white">$15 USD:</span> Each additional Person</p>
                   <p><span className="font-semibold text-white">Free:</span> Children under 10 years of age</p>
                 </div>
 

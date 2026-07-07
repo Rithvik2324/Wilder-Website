@@ -48,6 +48,13 @@ export function TransferSlideshow() {
           />
         ))}
       </div>
+
+      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 text-center text-white">
+        <p className="text-lg font-semibold">
+          <span className="line-through text-white/70 mr-2">$300</span>$275
+        </p>
+        <p className="text-sm mt-1">+$15 per each additional person</p>
+      </div>
     </div>
   );
 }
