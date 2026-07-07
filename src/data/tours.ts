@@ -2047,10 +2047,10 @@ export const tours: Tour[] = [
     "Wildlife"
   ],
 
-  image: "/images/7-DAY-1.jpeg",
+  image: "/images/7-Day-1.jpeg",
 
   gallery: [
-    "/images/7-DAY-1.jpeg",
+    "/images/7-Day-1.jpeg",
     "/images/7-DAY-2.avif",
     "/images/7-DAY-3.jpeg",
     "/images/7-days-3.jpeg"
