@@ -2047,16 +2047,16 @@ export const tours: Tour[] = [
     "Wildlife"
   ],
 
-  image: "/images/7-days-1.jpeg",
+  image: "/images/7-DAY-1.jpeg",
 
   gallery: [
-    "/images/7-days-1.jpeg",
-    "/images/7-days-2.jpeg",
-    "/images/7-days-3.jpeg",
-    "/images/7-days-4.jpeg"
+    "/images/7-DAY-1.jpeg",
+    "/images/7-DAY-2.avif",
+    "/images/7-DAY-3.jpeg",
+    "/images/7-days-3.jpeg"
   ],
   rating: 5.0,
-  reviews: 0,
+  reviews: 120,
   featured: true,
   theme: "package"
 },
@@ -2137,17 +2137,17 @@ export const tours: Tour[] = [
     "Families"
   ],
 
-  image: "/images/themes/3-days-3.png",
+  image: "/images/3-DAY-1.jpeg",
 
   gallery: [
-    "/images/themes/3-days-1.jpeg",
-    "/images/themes/3-days-2.png",
-    "/images/themes/3-days-3.png",
+    "/images/3-DAY-1.jpeg",
+    "/images/3-DAY-2.jpeg",
+    "/images/3-DAY-3.jpeg",
     "/images/themes/3-days-4.png"
   ],
 
   rating: 5.0,
-  reviews: 0,
+  reviews: 120,
   featured: true,
   theme: "package"
 },
@@ -2250,7 +2250,7 @@ export const tours: Tour[] = [
   ],
 
   rating: 5.0,
-  reviews: 0,
+  reviews: 120,
   featured: true,
   theme: "package"
 }

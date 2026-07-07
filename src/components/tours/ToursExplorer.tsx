@@ -65,6 +65,17 @@ export function ToursExplorer({
         default: return Number(b.featured) - Number(a.featured) || b.rating - a.rating;
       }
     });
+    console.log(
+      "Multi-day tours:",
+      tours
+        .filter((t) => t.category === "Multi-day")
+        .map((t) => ({
+          name: t.name,
+          slug: t.slug,
+          rating: t.rating,
+          reviews: t.reviews,
+        }))
+    );
     return list;
   }, [category, difficulties, interests, maxPrice, query, sort]);
 

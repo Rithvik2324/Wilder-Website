@@ -90,14 +90,22 @@ export default function HomePage() {
             <SectionHeading
               align="center"
               kicker="How much time do you have?"
-              title="Full days & half days"
-              subtitle="Go all-in on an epic full-day expedition, or grab a half-day thrill between beach time."
+              title="Full-day, half-day & multi-day adventures"
+              subtitle="Choose from quick half-day escapes, immersive full-day expeditions, or unforgettable multi-day packages."
             />
           </Reveal>
-          <div className="mt-12 grid gap-6 md:grid-cols-2">
+          <div className="mt-12 grid gap-6 md:grid-cols-3">
             {[
               { href: "/tours?category=full-day", title: "Full-Day Adventures", count: fullDayTours.length, img: HERO_IMAGES.canopy, theme: "jungle-hike", blurb: "Big expeditions — Maya temples, jaguar trails, and triple-threat jungle days." },
               { href: "/tours?category=half-day", title: "Half-Day Adventures", count: halfDayTours.length, img: HERO_IMAGES.waterfall, theme: "waterfall", blurb: "Quick hits of adrenaline and wonder, perfect alongside your beach days." },
+              {
+                href: "/tours?category=multi-day",
+                title: "Multi-Day Packages",
+                count: featuredTours.filter((tour) => tour.category === "Multi-day").length,
+                img: HERO_IMAGES.canopy,
+                theme: "jungle-hike",
+                blurb: "Epic multi-day journeys that combine Belize's best adventures into one unforgettable experience.",
+              },
             ].map((c) => (
               <Reveal key={c.href}>
                 <Link href={c.href} className="group relative flex min-h-[340px] items-end overflow-hidden rounded-3xl p-8 text-white shadow-lift">

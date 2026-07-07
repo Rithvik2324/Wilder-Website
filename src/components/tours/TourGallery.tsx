@@ -80,37 +80,36 @@ export function TourGallery({ images, alt, theme }: { images: string[]; alt: str
       </div>
 
       {open && (
-        <div className="fixed inset-0 z-[80] flex flex-col bg-ink/95 backdrop-blur" role="dialog" aria-modal="true">
+        <div className="fixed inset-0 z-[2147483647] flex flex-col bg-ink/95 backdrop-blur isolate" role="dialog" aria-modal="true">
           <button
             type="button"
-            data-gallery-close
             aria-label="Close gallery"
-            onPointerUp={(event) => {
-              event.preventDefault();
-              event.stopPropagation();
-              close();
+            onClick={close}
+            style={{
+              position: "fixed",
+              top: "90px",
+              right: "20px",
+              width: "48px",
+              height: "48px",
+              zIndex: 2147483647,
+              background: "rgba(255,255,255,0.15)",
+              color: "white",
+              borderRadius: "9999px",
+              border: "1px solid rgba(255,255,255,0.2)",
+              backdropFilter: "blur(10px)",
+              WebkitBackdropFilter: "blur(10px)",
+              cursor: "pointer",
+              pointerEvents: "auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              transition: "background-color 0.2s ease",
             }}
-            onMouseDown={(event) => {
-              event.preventDefault();
-              event.stopPropagation();
-              close();
-            }}
-            onTouchEnd={(event) => {
-              event.preventDefault();
-              event.stopPropagation();
-              close();
-            }}
-            onClick={(event) => {
-              event.preventDefault();
-              event.stopPropagation();
-              close();
-            }}
-            className="fixed right-4 top-4 z-[100] flex h-12 w-12 items-center justify-center rounded-full bg-white/15 text-white shadow-lift ring-1 ring-white/20 backdrop-blur transition hover:bg-white/25"
           >
             <X className="h-6 w-6" />
           </button>
 
-          <div className="relative z-20 flex items-center justify-between p-4 pr-20 text-white">
+          <div className="relative z-20 flex items-center justify-between p-4 pr-20 text-white pointer-events-none">
             <span className="text-sm font-semibold">{idx + 1} / {imgs.length}</span>
           </div>
           <div className="relative flex flex-1 items-center justify-center px-4 pb-4">
@@ -140,3 +139,4 @@ export function TourGallery({ images, alt, theme }: { images: string[]; alt: str
     </>
   );
 }
+ 
