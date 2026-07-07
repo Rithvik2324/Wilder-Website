@@ -65,7 +65,7 @@ export const site = {
       "detail": "Jungle ATV at Mayan King, the Cockscomb jaguar trails, ATM cave, Tikal across the border in Guatemala. Build a week with us and we handle the logistics."
     },
     {
-      "title": "Guides Who Teach, Not Just Lead",
+      "title": "Guides Who Host and Entertain",
       "detail": "Our team names the birds, reads the tracks, and explains the history, so you leave understanding Belize, not just having seen it."
     }
   ],

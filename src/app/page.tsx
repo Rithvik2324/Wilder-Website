@@ -105,7 +105,7 @@ export default function HomePage() {
                 playsInline
                 controls
               >
-                <source src="/videos/wilder_belize_guide.mp4" type="video/mp4" />
+                <source src="/videos/Wilder Website Cinematic.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>

@@ -159,6 +159,22 @@ export function ToursExplorer({
   return (
     <section className="section">
       <div className="container-page">
+        <div className="mb-8 rounded-2xl border-l-4 border-jungle-600 bg-jungle-50 px-6 py-5">
+          <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
+            <div>
+              <h2 className="font-display text-2xl font-bold text-ink">
+                Eco-Friendly Tours & Packages
+              </h2>
+              <p className="mt-1 text-sm text-ink-soft">
+                Explore Belize responsibly. Every tour is planned to support nature conservation, respect local communities, and minimize environmental impact.
+              </p>
+            </div>
+            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-jungle-200 bg-white px-4 py-2 text-xs font-semibold text-jungle-700">
+              <span className="h-2 w-2 rounded-full bg-jungle-600" />
+              Sustainable Tourism
+            </div>
+          </div>
+        </div>
         {/* Search + sort bar */}
         <div className="mb-8 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div className="relative flex-1 md:max-w-md">

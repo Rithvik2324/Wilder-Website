@@ -15,10 +15,10 @@ export function Footer() {
           <div className="relative">
             <p className="kicker justify-center text-coral-200">Your adventure is waiting</p>
             <h2 className="mx-auto mt-3 max-w-2xl text-3xl text-white md:text-5xl">
-              Ready to roam Belize the wilder way?
+              Ready to explore Belize the wilder way?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-white/85">
-              Tell us your dates and we&apos;ll craft the kind of day you&apos;ll be talking about for years.
+              Tell us your dates and we&apos;ll craft the kind of day you&apos;ll be talking about for lifetime.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link href="/tours" className="btn btn-white">Browse Adventures <ArrowRight className="h-4 w-4" /></Link>
@@ -46,7 +46,7 @@ export function Footer() {
                 </span>
               </Link>
               <p className="mt-4 max-w-xs text-sm leading-relaxed">
-                A family-run outfitter in Placencia Village taking travelers deep into the real Belize — jungle,
+                Belizian owned tour company in Placencia Village taking travelers deep into the real Belize — jungle,
                 waterfalls, caves, and Maya country.
               </p>
               <div className="mt-5 flex gap-2.5">
