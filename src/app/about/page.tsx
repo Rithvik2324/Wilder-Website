@@ -21,8 +21,8 @@ export default function AboutPage() {
       <PageHero
         image={HERO_IMAGES.canopy}
         theme="jungle-hike"
-        kicker="Our story"
-        title="Born in Placencia, raised in the wild"
+        kicker="Who we are?"
+        title="Belizian owned, locally operated tour company"
         subtitle={site.aboutShort}
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />

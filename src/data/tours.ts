@@ -99,7 +99,7 @@ export const tours: Tour[] = [
     "image": "/images/themes/mayan-ruins.jpg",
     "gallery": [
       "/images/themes/mayan-ruins.jpg",
-      "/images/themes/chocolate.jpg",
+      "/images/T-bird.jpeg",
       "/images/themes/jungle-hike.jpg",
       "/images/themes/waterfall.jpg"
     ],
@@ -179,12 +179,12 @@ export const tours: Tour[] = [
       "Nature",
       "Family"
     ],
-    "image": "/images/themes/zipline.jpg",
+    "image": "/images/Zip.jpeg",
     "gallery": [
-      "/images/themes/zipline.jpg",
-      "/images/themes/waterfall.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/river-tubing.jpg"
+      "/images/Zip.jpeg",
+      "/images/cavetubing.jpeg",
+      "/images/Scarlet 4.jpeg",
+      "/images/Monkey.jpeg"
     ],
     "rating": 4.8,
     "reviews": 81,
@@ -354,7 +354,7 @@ export const tours: Tour[] = [
     ],
     "rating": 4.8,
     "reviews": 167,
-    "featured": true,
+    "featured": false,
     "theme": "mayan-ruins"
   },
   {
@@ -595,23 +595,23 @@ export const tours: Tour[] = [
       "Nature",
       "Water"
     ],
-    "image": "/images/themes/waterfall.jpg",
+    "image": "/images/davis-falls.jpeg",
     "gallery": [
-      "/images/themes/waterfall.jpg",
+      "/images/davis-falls.jpeg",
       "/images/themes/zipline.jpg",
       "/images/themes/jungle-hike.jpg",
       "/images/heroes/hero-coast.jpg"
     ],
     "rating": 4.8,
     "reviews": 116,
-    "featured": true,
+    "featured": false,
     "theme": "waterfall"
   },
   {
     "slug": "atm-cave-exploration",
     "name": "ATM Cave Exploration",
     "category": "Full Day",
-    "price": 200,
+    "price": 225,
     "duration": "Full Day · 8–10 hrs",
     "durationHours": 9,
     "difficulty": "Challenging",
@@ -677,9 +677,9 @@ export const tours: Tour[] = [
       "Culture",
       "Adrenaline"
     ],
-    "image": "/images/themes/cave.jpg",
+    "image": "/images/pot-image.jpeg",
     "gallery": [
-      "/images/themes/cave.jpg",
+      "/images/pot-image.jpeg",
       "/images/themes/zipline.jpg",
       "/images/themes/mayan-ruins.jpg",
       "/images/themes/chocolate.jpg"
@@ -762,16 +762,16 @@ export const tours: Tour[] = [
       "History",
       "Wildlife"
     ],
-    "image": "/images/themes/horseback.jpg",
+    "image": "/images/Jungle-saddle.jpeg",
     "gallery": [
-      "/images/themes/horseback.jpg",
+      "/images/pot-image.jpeg",
       "/images/themes/zipline.jpg",
       "/images/themes/jungle-hike.jpg",
       "/images/themes/mayan-ruins.jpg"
     ],
     "rating": 4.7,
     "reviews": 202,
-    "featured": false,
+    "featured": true,
     "theme": "horseback"
   },
   {
@@ -1017,7 +1017,7 @@ export const tours: Tour[] = [
       "Water",
       "Family"
     ],
-    "image": "/images/themes/waterfall.jpg",
+    "image": "/images/River-jungle.jpeg",
     "gallery": [
       "/images/themes/waterfall.jpg",
       "/images/themes/jungle-hike.jpg",
@@ -1026,7 +1026,7 @@ export const tours: Tour[] = [
     ],
     "rating": 4.9,
     "reviews": 151,
-    "featured": false,
+    "featured": true,
     "theme": "waterfall"
   },
   {
@@ -1100,7 +1100,7 @@ export const tours: Tour[] = [
       "Hiking",
       "Photography"
     ],
-    "image": "/images/themes/zipline.jpg",
+    "image": "/images/Another-zipline.jpeg",
     "gallery": [
       "/images/themes/zipline.jpg",
       "/images/themes/jungle-hike.jpg",
@@ -1109,7 +1109,7 @@ export const tours: Tour[] = [
     ],
     "rating": 4.9,
     "reviews": 194,
-    "featured": false,
+    "featured": true,
     "theme": "zipline"
   },
   {
@@ -1192,7 +1192,7 @@ export const tours: Tour[] = [
     ],
     "rating": 4.8,
     "reviews": 57,
-    "featured": true,
+    "featured": false,
     "theme": "monkey-river"
   },
   {
