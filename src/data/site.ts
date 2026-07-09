@@ -25,7 +25,7 @@ export const site = {
   "hero": {
     "kicker": "Placencia Village, Belize",
     "headline": "Roam Belize, the Wilder Way",
-    "subheadline": "From jungle waterfalls and Maya temples to the warm Caribbean,  Wilder takes you deep into the real Belize.",
+    "subheadline": "From jungle waterfalls and Maya temples to the warm Caribbean,  Wilder Belize Adventures takes you deep into the real Belize.",
     "ctaPrimary": "Browse Adventures",
     "ctaSecondary": "Talk to a Guide"
   },
@@ -160,7 +160,7 @@ export const site = {
   "travelersInfo": [
     {
       "title": "Getting to Placencia",
-      "body": "Most travelers fly into Philip S. W. Goldson International Airport (BZE) near Belize City, then reach Placencia by a short domestic flight to Placencia Airstrip (PLJ), a scenic shuttle, or a rental car down the Hummingbird and Southern Highways (about a 3-hour drive). We can arrange a transfer for any of these routes so you land and relax."
+      "body": "Most travelers fly into Philip S. W. Goldson International Airport (BZE) near Belize City, then reach Placencia by a short domestic flight to Placencia Airstrip (PLJ), a scenic shuttle, or a rental car down the Southern Highways (about a 3-hour drive). We can arrange a transfer for any of these routes so you land and relax."
     },
     {
       "title": "Best Time to Visit",

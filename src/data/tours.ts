@@ -38,11 +38,11 @@ export const tours: Tour[] = [
     "groupSize": "2-12 guests",
     "tagline": "Climb Maya stone, then dive into jungle blue.",
     "shortDescription": "Scale the towering El Castillo pyramid at Xunantunich, then cool off in the sapphire waters of the Inland Blue Hole on this full-day Cayo District adventure.",
-    "description": "The day begins with a slow, scenic ride west toward the Guatemala border, where the Mopan River guards one of Belize's most striking Maya cities. You'll cross the river the old-fashioned way, on a hand-cranked cable ferry, then walk into Xunantunich beneath the canopy where howler monkeys roar and toucans clack overhead. Standing atop El Castillo, the second-tallest structure in all of Belize, the whole Cayo landscape unfolds beneath you in waves of green, with the friezes of ancient kings still carved into the temple walls.\n\nAfter the climb, you'll trade limestone for limestone-filtered water at the Inland Blue Hole, a collapsed cavern pool tucked into the St. Herman's Blue Hole National Park. The water runs clear and startlingly cool, fed by an underground river that surfaces just long enough to fill this perfect turquoise basin before vanishing back into the rock. You'll float, swim, and let the jungle do the rest.\n\nIt's a day that pairs the grandeur of Maya history with the simple joy of a wild swim, with your guide threading the stories together the whole way: the astronomers who built the temples, the rivers that carved the caves, and the rainforest that swallowed it all and let it sleep.",
+    "description": "The day begins with a slow, scenic ride west toward the Guatemala border, where the Mopan River guards one of Belize's most striking Maya cities. You'll cross the river the old-fashioned way, on a hand-cranked cable ferry, then walk into Xunantunich beneath the canopy where monkeys roar and toucans clack overhead. Standing atop El Castillo, the second-tallest structure in all of Belize, the whole Cayo landscape unfolds beneath you in waves of green, with the friezes of ancient kings still carved into the temple walls.\n\nAfter the climb, you'll trade limestone for limestone-filtered water at the Inland Blue Hole, a collapsed cavern pool tucked into the St. Herman's Blue Hole National Park. The water runs clear and startlingly cool, fed by an underground river that surfaces just long enough to fill this perfect turquoise basin before vanishing back into the rock. You'll float, swim, and let the jungle do the rest.\n\nIt's a day that pairs the grandeur of Maya history with the simple joy of a wild swim, with your guide threading the stories together the whole way: the astronomers who built the temples, the rivers that carved the caves, and the rainforest that swallowed it all and let it sleep.",
     "highlights": [
       "Climb El Castillo, the 130-foot temple pyramid towering over the Cayo jungle",
       "Cross the Mopan River on the iconic hand-cranked cable ferry",
-      "Spot howler monkeys, toucans, and iguanas in the surrounding rainforest",
+      "Spot monkeys, toucans, and iguanas in the surrounding rainforest",
       "Swim in the cool, jewel-toned waters of the Inland Blue Hole",
       "Hear the stories of Maya kings carved into Xunantunich's stucco friezes",
       "Travel through the lush hills and farmland of western Belize"
@@ -125,7 +125,7 @@ export const tours: Tour[] = [
       "Drift down a tranquil jungle river by tube",
       "Hike to and swim beneath a powerful Stann Creek waterfall",
       "Cool off in a crystal-clear natural swimming pool",
-      "Listen for toucans, parrots, and howler monkeys in the treetops",
+      "Listen for toucans, parrots, and monkeys in the treetops",
       "Experience three distinct jungle adventures in a single day"
     ],
     "included": [
@@ -248,7 +248,7 @@ export const tours: Tour[] = [
         "detail": "Float by headlamp through the cave's cathedral chambers along the underground river."
       },
       {
-        "title": "Riverside Lunch",
+        "title": "Lunch",
         "detail": "Enjoy a hearty lunch beside the river before heading back."
       },
       {
@@ -535,13 +535,13 @@ export const tours: Tour[] = [
     "groupSize": "Min 2 guests",
     "tagline": "Hike, climb, and swim to Belize's wildest falls.",
     "shortDescription": "Trek through pristine Bocawina rainforest to the towering Davis Falls, where you can climb the cascade and plunge into its emerald pool.",
-    "description": "Hidden in the rainforest of the Bocawina range near Stann Creek, Davis Falls is the kind of waterfall you have to earn. The trail in is a proper jungle hike: you'll cross streams, climb over roots and boulders, and push through dense, bird-loud forest while your guide points out howler monkeys overhead, tropical blooms, and the occasional toucan. Every bend tightens the anticipation as the distant roar of falling water grows louder.\n\nThen the forest opens and Davis Falls drops in front of you, a tall, thundering ribbon of white water pouring over dark rock into a deep emerald pool. This is no roadside photo stop. Adventurous guests can scramble and climb the lower tiers of the cascade with their guide, finding ledges and chutes most travelers never reach, then leap or ease into the cool, clear plunge pool below. Float on your back, feel the spray on your face, and listen to the jungle close in around you.\n\nAfter you've swum your fill and refueled, you'll hike back out through the same wild Bocawina forest, legs tired and spirit recharged. For travelers who want the real thing, no crowds, no railings, just rainforest, rock, and water, this is the ultimate waterfall escape in southern Belize.",
+    "description": "Hidden in the rainforest of Stann Creek, Davis Falls is the kind of waterfall you have to earn. In the drive to the meeting spot alta vista :you'll cross streams, climb over roots and boulders, and push through dense, bird-loud forest while your guide points out monkeys overhead, tropical blooms, and the occasional toucan. Every bend tightens the anticipation as the distant roar of falling water grows louder.\n\nThen the forest opens and Davis Falls drops in front of you, a tall, thundering ribbon of white water pouring over dark rock into a deep emerald pool. This is no roadside photo stop. Adventurous guests can scramble and climb the lower tiers of the cascade with their guide, finding ledges and chutes most travelers never reach, then leap or ease into the cool, clear plunge pool below. Float on your back, feel the spray on your face, and listen to the jungle close in around you.\n\nAfter you've swum your fill and refueled, you'll hike back out through the same wild Bocawina forest, legs tired and spirit recharged. For travelers who want the real thing, no crowds, no railings, just rainforest, rock, and water, this is the ultimate waterfall escape in southern Belize.",
     "highlights": [
-      "Hike through the pristine rainforest of the Bocawina range",
+      "Hike through the pristine rainforest of the Stann Creek range",
       "Reach the towering, thundering Davis Falls deep in the bush",
       "Climb the lower tiers of the cascade with your guide",
       "Swim and plunge into the deep emerald pool at the base",
-      "Spot howler monkeys, toucans, and tropical birds along the trail",
+      "Spot monkeys, toucans, and tropical birds along the trail",
       "Experience a wild waterfall with no crowds and no railings"
     ],
     "included": [
@@ -573,10 +573,6 @@ export const tours: Tour[] = [
         "detail": "Gear up and get a safety briefing before stepping onto the jungle trail."
       },
       {
-        "title": "Rainforest Hike",
-        "detail": "Trek through dense Bocawina forest, crossing streams and watching for monkeys and toucans."
-      },
-      {
         "title": "Arrive at Davis Falls",
         "detail": "Emerge at the base of the towering waterfall and take in the roar and spray."
       },
@@ -585,8 +581,8 @@ export const tours: Tour[] = [
         "detail": "Scramble the lower cascade with your guide and plunge into the cool emerald pool."
       },
       {
-        "title": "Lunch & Return Hike",
-        "detail": "Refuel with lunch, then hike back through the forest to the van and ride home to Placencia."
+        "title": "Lunch",
+        "detail": "Refuel with lunch,return to the van and ride home to Placencia."
       }
     ],
     "bestFor": [
@@ -700,14 +696,14 @@ export const tours: Tour[] = [
     "groupSize": "Min 2 guests",
     "tagline": "Ride the jungle, then drift through a Maya underworld.",
     "shortDescription": "Saddle up for a horseback ride through Bocawina rainforest, then float through ancient cave passages the Maya once held sacred.",
-    "description": "Your day begins in the saddle, swaying down jungle trails in the Stann Creek foothills where the forest closes in green and humming around you. Your horse knows the way through the dappled light, past strangler figs and the calls of oropendolas overhead, while your guide points out medicinal plants the Maya have used for centuries. The pace is unhurried, the air thick with the smell of wet earth and wild ginger, and by the time you dismount your legs are pleasantly tired and your senses wide awake.\n\nThen the world goes cool and quiet. You wade into a turquoise river, settle into an inner tube, and let the current carry you into a limestone cave the ancient Maya believed was an entrance to Xibalba, the underworld. Headlamps catch glittering stalactites and chambers where ceremonial fires once burned. The only sounds are dripping water, the soft splash of your paddle-hands, and your guide's voice echoing the stories carried down through generations.\n\nYou emerge blinking into the green afternoon, sun-warmed and quietly amazed at what you just floated through. A riverside lunch caps the day before the easy ride back to the peninsula, your boots muddy, your camera full, and your sense of Belize a little wilder than it was this morning.",
+    "description": "Your day begins in the saddle, swaying down jungle trails in the Stann Creek foothills where the forest closes in green and humming around you. Your horse knows the way through the dappled light, past strangler figs and the calls of oropendolas overhead, while your guide points out medicinal plants the Maya have used for centuries. The pace is unhurried, the air thick with the smell of wet earth and wild ginger, and by the time you dismount your legs are pleasantly tired and your senses wide awake.\n\nThen the world goes cool and quiet. You wade into a turquoise river, settle into an inner tube, and let the current carry you into a limestone cave the ancient Maya believed was an entrance to Xibalba, the underworld. Headlamps catch glittering stalactites and chambers where ceremonial fires once burned. The only sounds are dripping water, the soft splash of your paddle-hands, and your guide's voice echoing the stories carried down through generations.\n\nYou emerge blinking into the green afternoon, sun-warmed and quietly amazed at what you just floated through. A lunch caps the day before the easy ride back to the peninsula, your boots muddy, your camera full, and your sense of Belize a little wilder than it was this morning.",
     "highlights": [
       "Guided horseback ride through the rainforest foothills near Bocawina",
       "Float through a sacred Maya cave the ancient people called an entrance to Xibalba",
       "Headlamp-lit limestone chambers full of stalactites and crystal formations",
       "Spot oropendolas, toucans and jungle birdlife from the saddle",
       "Cool turquoise river water on a hot Belize afternoon",
-      "Riverside lunch and stories from your local Belizean guide"
+      "lunch and stories from your local Belizean guide"
     ],
     "included": [
       "Free hotel pickup and drop-off on the Placencia peninsula",
@@ -748,7 +744,7 @@ export const tours: Tour[] = [
         "detail": "Float by headlamp through ancient limestone chambers the Maya revered as the underworld's gateway."
       },
       {
-        "title": "Riverside Lunch",
+        "title": "Lunch",
         "detail": "Dry off and refuel with a hearty lunch beside the water before the ride home."
       },
       {
@@ -1033,20 +1029,20 @@ export const tours: Tour[] = [
     "slug": "bocawina-jungle-zipline-adventure",
     "name": "Bocawina Jungle Zipline Adventure",
     "category": "Half Day",
-    "price": 140,
+    "price": 175,
     "duration": "6 Hours",
     "durationHours": 6,
     "difficulty": "Moderate",
     "groupSize": "2-12 guests",
     "tagline": "Fly the rainforest canopy in Stann Creek's wild heart.",
     "shortDescription": "Soar across multiple ziplines through the towering canopy of Bocawina Rainforest, then cool off beneath a thundering jungle waterfall.",
-    "description": "Strap in and step off the platform into one of the longest zipline circuits in Belize, threaded high through the green cathedral of Bocawina National Park in the Stann Creek foothills. You'll glide cable to cable above the canopy, the warm jungle air rushing past as howler monkeys grumble somewhere below and toucans clatter through the treetops. Each line opens up a new view of unbroken rainforest rolling toward the Maya Mountains, and the platforms are perched high enough to make your stomach drop in the best possible way.\n\nBocawina is the kind of place that rewards you twice. Between flights you'll hike short forest trails past buttressed ceiba trees and the ruins of an old Maya settlement, your guide pointing out leafcutter ant highways and the calls hiding in the leaves. The reserve protects a stretch of true broadleaf jungle, dense and humming, where the only soundtrack is birdsong, cicadas, and the distant rush of falling water.\n\nWhen the last cable is behind you, the reward is the cool plunge pool below Antelope Falls or Bocawina Falls, depending on conditions, where you can wade in and let the spray wash off the adrenaline. You leave with rubber legs, a memory card full of canopy shots, and the quiet satisfaction of having conquered the jungle from the sky.",
+    "description": "Strap in and step off the platform into one of the longest zipline circuits in Belize, threaded high through the green cathedral of Bocawina National Park in the Stann Creek foothills. You'll glide cable to cable above the canopy, the warm jungle air rushing past as monkeys grumble somewhere below and toucans clatter through the treetops. Each line opens up a new view of unbroken rainforest rolling toward the Maya Mountains, and the platforms are perched high enough to make your stomach drop in the best possible way.\n\nBocawina is the kind of place that rewards you twice. Between flights you'll hike short forest trails past buttressed ceiba trees and the ruins of an old Maya settlement, your guide pointing out leafcutter ant highways and the calls hiding in the leaves. The reserve protects a stretch of true broadleaf jungle, dense and humming, where the only soundtrack is birdsong, cicadas, and the distant rush of falling water.\n\nWhen the last cable is behind you, the reward is the cool plunge pool below Antelope Falls or Bocawina Falls, depending on conditions, where you can wade in and let the spray wash off the adrenaline. You leave with rubber legs, a memory card full of canopy shots, and the quiet satisfaction of having conquered the jungle from the sky.",
     "highlights": [
       "Multiple long ziplines soaring across the Bocawina rainforest canopy",
       "Big-air views over unbroken jungle toward the Maya Mountains",
       "Short guided forest hike past ceiba trees and Maya ruins",
       "Cool off in a natural waterfall plunge pool",
-      "Spot toucans, howler monkeys, and tropical birds along the way",
+      "Spot toucans, monkeys, and tropical birds along the way",
       "Small groups and expert local guides who know every cable and trail"
     ],
     "included": [
@@ -1127,7 +1123,7 @@ export const tours: Tour[] = [
     "highlights": [
       "Search for gentle West Indian manatees in coastal seagrass shallows",
       "Boat deep into the Monkey River's mangrove-lined jungle",
-      "Get close to roaring troops of black howler monkeys",
+      "Get close to roaring troops of black monkeys",
       "Spot crocodiles, iguanas, herons, and tropical birds",
       "Guided nature walk into riverside rainforest",
       "Visit the remote Creole and Garifuna Monkey River Village"
@@ -1162,7 +1158,7 @@ export const tours: Tour[] = [
       },
       {
         "title": "Up the Monkey River",
-        "detail": "Enter the river mouth and motor upstream through mangroves and jungle in search of howler monkeys and basking crocodiles."
+        "detail": "Enter the river mouth and motor upstream through mangroves and jungle in search of monkeys and basking crocodiles."
       },
       {
         "title": "Jungle Nature Walk",
@@ -1206,7 +1202,7 @@ export const tours: Tour[] = [
     "groupSize": "Min 2 guests",
     "tagline": "Stone-ground cacao, ancient hands, jungle waterfall.",
     "shortDescription": "Grind your own chocolate the ancient Maya way at a family farm, then cool off in a cascading jungle waterfall.",
-    "description": "Long before chocolate filled supermarket shelves, the Maya were drinking it bitter, spiced, and sacred, and on this trip you'll make it the same way they have for thousands of years. At a family-run cacao farm in the foothills, you'll walk among the cacao trees, crack open a ripe pod to taste the sweet white pulp around the beans, and learn how the Maya turned this fruit into a currency, a ceremony, and a drink fit for kings. Then you roll up your sleeves.\n\nWith roasted beans warm from the comal, you'll peel, then kneel to the metate, the traditional grinding stone, and work the cacao into a thick, glossy paste with your own hands. The smell alone is worth the trip. Your host shows you how to blend it with cane sugar, vanilla, and chile, then whisk a frothy cup of authentic Maya hot chocolate to sip right there in the jungle, deep and earthy and nothing like the candy bar version you know.\n\nWith cacao still on your fingers, you'll head to a nearby jungle waterfall to wash off the heat and float in the cool, clear plunge pool beneath the cascade. It's a half day that feeds every sense, the warmth of a Maya kitchen, the bitterness of real cacao, the roar of falling water, and the green hush of the Belize rainforest all around you.",
+    "description": "Long before chocolate filled supermarket shelves, the Maya were drinking it bitter, spiced, and sacred, and on this trip you'll make it the same way they have for thousands of years. At a family-run cacao farm in the foothills, you'll walk among the cacao trees, crack open a ripe pod to taste the sweet white pulp around the beans, and learn how the Maya turned this fruit into a currency, a ceremony, and a drink fit for kings. Then you roll up your sleeves.\n\nWith roasted beans warm from the comal, you'll peel, then kneel to the metate, the traditional grinding stone, and work the cacao into a thick, glossy paste with your own hands. The smell alone is worth the trip. Your host shows you how to blend it with cane sugar, vanilla, and chile, then whisk a frothy cup of authentic Maya hot chocolate to sip right there in the jungle, deep and earthy and nothing like the candy bar version you know.\n\nWith cacao still on your fingers, you'll head to a nearby jungle waterfall to wash off the heat and float in the cool, clear plunge pool beneath the cascade. It's a half day that feeds every sense, the bitterness of real cacao, the roar of falling water, and the green lush of the Belize rainforest all around you.",
     "highlights": [
       "Tour a working family cacao farm and taste fresh cacao pulp",
       "Grind your own chocolate by hand on a traditional Maya metate",
@@ -1279,8 +1275,8 @@ export const tours: Tour[] = [
     "theme": "chocolate"
   },
   {
-    "slug": "cockscomb-bocawina-birdwatching",
-    "name": "Cockscomb / Bocawina Birdwatching",
+    "slug": "cockscomb-birdwatching",
+    "name": "Cockscomb Birdwatching",
     "category": "Half Day",
     "price": 150,
     "duration": "8 Hours",
@@ -1291,7 +1287,7 @@ export const tours: Tour[] = [
     "shortDescription": "A full day chasing toucans, trogons, and rare tropical species through the legendary Cockscomb Basin and Bocawina rainforests.",
     "description": "Belize packs more than 600 bird species into a country smaller than Massachusetts, and few places concentrate them like the Cockscomb Basin and neighboring Bocawina. This is a full day built for birders, starting early to catch the dawn chorus when the forest is loudest and the canopy comes alive. With binoculars up and your expert guide reading every call, you'll work the trails and forest edges where keel-billed toucans, collared aracaris, and montezuma oropendolas crowd the fruiting trees.\n\nCockscomb Basin Wildlife Sanctuary is world famous as the planet's first jaguar reserve, but it's also a birder's paradise, its rivers and broadleaf forest sheltering scarlet macaws, king vultures, slaty-tailed trogons, and the secretive great curassow. Your guide knows the spots, the seasons, and the songs, helping you separate a tinamou from a wood-rail by ear and lining up the scope on a perched raptor across the valley. Between sightings, keep an eye out for the agoutis, tapir tracks, and other wildlife that share these trails.\n\nYou'll move between habitats through the day, from the riverine forest of Cockscomb to the canopy edges of Bocawina, each one offering a different cast of species. Bring patience and a checklist, because this is the kind of day that fills a page. By late afternoon, with a long list logged and the light going golden, you'll head back to Placencia having seen the wildest, most bird-rich corner of southern Belize.",
     "highlights": [
-      "Full day birding across Cockscomb Basin and Bocawina rainforests",
+      "half day birding across Cockscomb Basin or Bocawina rainforests",
       "Chance at scarlet macaws, keel-billed toucans, and trogons",
       "Explore the world's first jaguar reserve",
       "Expert guide who knows every call and seasonal hotspot",
@@ -1321,7 +1317,7 @@ export const tours: Tour[] = [
     "itinerary": [
       {
         "title": "Early Pickup",
-        "detail": "We collect you before sunrise from your Placencia hotel to reach the forest for the dawn chorus."
+        "detail": "We collect you before sunrise (5:30 am) from your Placencia hotel to reach the forest for the dawn chorus."
       },
       {
         "title": "Cockscomb Basin",
@@ -1329,15 +1325,7 @@ export const tours: Tour[] = [
       },
       {
         "title": "Trailside Lunch",
-        "detail": "Pause for a packed lunch in the forest while keeping your ears open for the next call."
-      },
-      {
-        "title": "Bocawina Canopy Edges",
-        "detail": "Shift to Bocawina's canopy-edge habitats for a different set of species and fresh sightings."
-      },
-      {
-        "title": "Afternoon Birding",
-        "detail": "Work the golden afternoon light when activity picks back up, adding final species to the day's list."
+        "detail": "Stop for lunch at 10:30 am or 11:00 am in the forest while keeping your ears open for the next call."
       },
       {
         "title": "Return to Placencia",
@@ -1373,12 +1361,12 @@ export const tours: Tour[] = [
     "groupSize": "Min 2 guests",
     "tagline": "Chase Belize's rarest red wings upriver.",
     "shortDescription": "Boat the Monkey River corridor at dawn to spot wild scarlet macaws blazing crimson against the Stann Creek canopy.",
-    "description": "There are barely 300 wild scarlet macaws left in Belize, and most of them gather along the river valleys of southern Stann Creek and Red Bank to feed. This half-day expedition puts you on the water early, when the air is still cool and the birds are most active, gliding low over the treetops in flashes of crimson, gold, and electric blue. Your guide knows the feeding trees and the flight paths, reading the forest by ear long before you see a single feather.\n\nFrom your boat you'll drift quietly beneath strangler figs and bri-bri trees, scanning the high branches as pairs of macaws crack open seeds with that unmistakable raucous squawk echoing across the valley. Along the way the river gives up its other residents too, iguanas draped over branches, jacanas tiptoeing across lily pads, and if you're lucky the rustle of a troop of howler monkeys moving overhead. Bring a good zoom lens, because when a macaw spreads its wings against the green wall of jungle, you'll want the shot.\n\nThis is unhurried, immersive birding for anyone who wants to witness one of Central America's most endangered icons in its true wild home, not a cage. Whether you're a serious birder ticking off a life list or simply someone who wants to feel the southern jungle wake up around you, the scarlet macaws of Belize will stay with you long after you've gone home.",
+    "description": "There are barely 300 wild scarlet macaws left in Belize, and most of them gather along the river valleys of southern Stann Creek and Red Bank to feed. This half-day expedition puts you on the water early, when the air is still cool and the birds are most active, gliding low over the treetops in flashes of crimson, gold, and electric blue. Your guide knows the feeding trees and the flight paths, reading the forest by ear long before you see a single feather.\n\nFrom your van you'll drive quietly beneath strangler figs and bri-bri trees, scanning the high branches as pairs of macaws crack open seeds with that unmistakable raucous squawk echoing across the valley. Along the way the river gives up its other residents too, iguanas draped over branches, jacanas tiptoeing across lily pads, and if you're lucky the rustle of a troop of monkeys moving overhead. Bring a good zoom lens, because when a macaw spreads its wings against the green wall of jungle, you'll want the shot.\n\nThis is unhurried, immersive birding for anyone who wants to witness one of Central America's most endangered icons in its true wild home, not a cage. Whether you're a serious birder ticking off a life list or simply someone who wants to feel the southern jungle wake up around you, the scarlet macaws of Belize will stay with you long after you've gone home.",
     "highlights": [
       "Spot wild scarlet macaws, one of Belize's most endangered birds",
       "Early-morning river boat ride when wildlife is most active",
       "Expert local guide who knows the macaw feeding trees and calls",
-      "Chance to see howler monkeys, iguanas, and herons along the way",
+      "Chance to see monkeys, iguanas, and herons along the way",
       "Prime photography of crimson wings against the jungle canopy",
       "Peaceful, low-impact wildlife experience away from the crowds"
     ],
@@ -1407,8 +1395,8 @@ export const tours: Tour[] = [
         "detail": "Your guide collects you from your Placencia peninsula hotel in an air-conditioned van for the scenic drive inland."
       },
       {
-        "title": "River Launch",
-        "detail": "Board your boat at the river landing and set off quietly upstream as the jungle comes alive in the morning light."
+        "title": "Hiking",
+        "detail": "15-20 minutes hike to the view point then to the feeding ground."
       },
       {
         "title": "Macaw Watching",
@@ -1416,7 +1404,7 @@ export const tours: Tour[] = [
       },
       {
         "title": "Wildlife Spotting",
-        "detail": "Keep your eyes on the banks for iguanas, herons, jacanas, and the occasional troop of howler monkeys."
+        "detail": "Keep your eyes on the banks for iguanas, herons, jacanas, and the occasional troop of monkeys."
       },
       {
         "title": "Snack Break",
@@ -1539,7 +1527,7 @@ export const tours: Tour[] = [
     "groupSize": "2-12 guests",
     "tagline": "Fly the canopy, swim a wild waterfall.",
     "shortDescription": "Race through the treetops on a zipline course, then hike to a jungle waterfall for a refreshing swim in its natural pool.",
-    "description": "Inside the lush folds of Bocawina rainforest, this half-day adventure pairs the thrill of the canopy with the reward of a wild waterfall. You'll start strapped into your harness, launching off the first platform and zipping line-to-line through dense, humming jungle. From up high you catch glimpses of the forest floor far below, the ridgelines rolling toward the Maya Mountains, and the kind of green that only southern Belize seems to grow.\n\nWith the adrenaline still buzzing, your guide leads you down a forest trail alive with birdsong and butterflies to a tumbling waterfall hidden in the trees. Drop your towel, wade into the cool pool at its base, and stand beneath the cascade as it pours over the rocks. It's the most satisfying way imaginable to rinse off the jungle heat, no spa required, just falling water and the roar of the forest.\n\nCompact enough to leave your afternoon free yet packed with both thrills and serenity, this tour is a Placencia favorite for good reason. Certified guides keep everything smooth and safe, so all you have to do is fly, hike, and swim. Conquer the canopy, then soak in the beauty of the jungle paradise you just earned.",
+    "description": "This half-day adventure pairs the thrill of the canopy with the reward of a wild waterfall. You'll start strapped into your harness, launching off the first platform and zipping line-to-line through dense, humming jungle. From up high you catch glimpses of the forest floor far below, the ridgelines rolling toward the Maya Mountains, and the kind of green that only southern Belize seems to grow.\n\nWith the adrenaline still buzzing, your guide leads you down a forest trail alive with birdsong and butterflies to a tumbling waterfall hidden in the trees. Drop your towel, wade into the cool pool at its base, and stand beneath the cascade as it pours over the rocks. It's the most satisfying way imaginable to rinse off the jungle heat, no spa required, just falling water and the roar of the forest.\n\nCompact enough to leave your afternoon free yet packed with both thrills and serenity, this tour is a Placencia favorite for good reason. Certified guides keep everything smooth and safe, so all you have to do is fly, hike, and swim. Conquer the canopy, then soak in the beauty of the jungle paradise you just earned.",
     "highlights": [
       "Zip through the Bocawina rainforest canopy on a guided course",
       "Hike a lush jungle trail to a tucked-away waterfall",
@@ -1550,7 +1538,6 @@ export const tours: Tour[] = [
     ],
     "included": [
       "Free hotel pickup and drop-off on the Placencia peninsula",
-      "Air-conditioned van transport to Bocawina",
       "Full zipline gear: harness, helmet, gloves, and pulleys",
       "Certified zipline and hiking guides",
       "Bottled water",
@@ -1569,7 +1556,7 @@ export const tours: Tour[] = [
     "itinerary": [
       {
         "title": "Hotel Pickup",
-        "detail": "Your guide picks you up on the Placencia peninsula for the air-conditioned drive to Bocawina rainforest."
+        "detail": "Your guide picks you up on the Placencia peninsula."
       },
       {
         "title": "Gear Up & Briefing",
@@ -1621,13 +1608,13 @@ export const tours: Tour[] = [
     "groupSize": "Min 2 guests",
     "tagline": "Throttle through jungle to a roaring cascade.",
     "shortDescription": "Rev a four-wheeler down muddy jungle trails to the thundering Mayan King Waterfall, then swim in its cool emerald pool.",
-    "description": "Rev up your adrenaline on a jungle ATV ride deep into the foothills of the Maya Mountains, where the Mayan King Waterfall waits at the end of the trail. You'll take the controls of your own four-wheeler and follow your guide along rugged dirt tracks, splashing through stream crossings, churning past banana plantations, and weaving beneath a thick canopy alive with birdsong. Mud on your boots, wind in your face, the throaty growl of the engine, this is Belize backcountry on your own terms.\n\nThe trail opens to reveal the Mayan King Waterfall pouring over a tiered rock face into a deep emerald pool. Cut the engine, peel off your gear, and dive into the cool, clear water at the base of the falls. Float on your back beneath the cascade, scramble up the rocks for the perfect photo, and feel the spray on your sun-warmed skin. After the dust and diesel of the ride, there's no sweeter reward than this hidden cathedral of water and stone.\n\nWith your guide handling the route and the riding tips, all you bring is your nerve and a sense of fun. This is the ultimate half-day for travelers who want a little grit with their grandeur. Conquer the trail, then relax and soak in the beauty of the jungle paradise you just earned.",
+    "description": "Rev up your adrenaline on a jungle ATV ride deep into the foothills of the Maya Mountains, where the Mayan King Waterfall waits at the end of the trail. You'll take the controls of your own four-wheeler and follow your guide along rugged dirt tracks, splashing through stream crossings, churning past orange orchid, and weaving beneath a thick canopy alive with birdsong. Mud on your boots, wind in your face, the throaty growl of the engine, this is Belize backcountry on your own terms.\n\nThe trail opens to reveal the Mayan King Waterfall pouring over a tiered rock face into a deep emerald pool. Cut the engine, peel off your gear, and dive into the cool, clear water at the base of the falls. Float on your back beneath the cascade, scramble up the rocks for the perfect photo, and feel the spray on your sun-warmed skin. After the dust and diesel of the ride, there's no sweeter reward than this hidden cathedral of water and stone.\n\nWith your guide handling the route and the riding tips, all you bring is your nerve and a sense of fun. This is the ultimate half-day for travelers who want a little grit with their grandeur. Conquer the trail, then relax and soak in the beauty of the jungle paradise you just earned.",
     "highlights": [
       "Drive your own ATV through rugged Maya Mountain foothills",
       "Splash through stream crossings and muddy jungle trails",
       "Reach the multi-tiered Mayan King Waterfall",
       "Swim in the cool emerald pool beneath the falls",
-      "Ride past banana plantations and dense rainforest canopy",
+      "Ride past orange orchid and dense rainforest canopy",
       "Hands-on adventure with full guide support"
     ],
     "included": [
@@ -1662,7 +1649,7 @@ export const tours: Tour[] = [
       },
       {
         "title": "Jungle Trail Ride",
-        "detail": "Throttle through mud, stream crossings, and banana plantations on the way into the foothills."
+        "detail": "Throttle through mud, stream crossings, and orange orchid on the way into the foothills."
       },
       {
         "title": "Mayan King Waterfall",
@@ -1920,7 +1907,7 @@ export const tours: Tour[] = [
         "detail": "Reach the secluded falls, cut the engine, and dive into the cool natural pool all to yourselves."
       },
       {
-        "title": "Riverside Lunch",
+        "title": "Lunch",
         "detail": "Dry off and refuel with lunch surrounded by the sounds of the rainforest."
       },
       {
@@ -2085,7 +2072,6 @@ export const tours: Tour[] = [
     "Swim in the famous Inland Blue Hole",
     "Licensed professional guides",
     "Flexible 5-day schedule with rest days",
-    "10% discount for groups of 6 or more"
   ],
 
   included: [
@@ -2181,7 +2167,6 @@ export const tours: Tour[] = [
   ],
 
   included: [
-    "Round-trip transportation",
     "Professional licensed guides",
     "All entrance fees",
     "ATV rental and safety equipment",
