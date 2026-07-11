@@ -3,7 +3,7 @@ export const site = {
   "company": {
     "name": "Wilder Belize Adventures",
     "shortName": "Wilder Belize",
-    "slogan": "Roam Belize, the Wilder Way",
+    "slogan": "Explore Belize, the Wilder Way",
     "tagline": "Your Gateway to Epic Belize Experiences",
     "phones": [
       "+501 650-1003",
@@ -24,7 +24,7 @@ export const site = {
   },
   "hero": {
     "kicker": "Placencia Village, Belize",
-    "headline": "Roam Belize, the Wilder Way",
+    "headline": "Explore Belize, the Wilder Way",
     "subheadline": "From jungle waterfalls and Maya temples to the warm Caribbean,  Wilder Belize Adventures takes you deep into the real Belize.",
     "ctaPrimary": "Browse Adventures",
     "ctaSecondary": "Talk to a Guide"

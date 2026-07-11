@@ -13,7 +13,7 @@ export function Testimonials() {
             align="center"
             kicker="Loved by travelers"
             title="Stories from the trail"
-            subtitle="Real reviews from guests who roamed Belize the wilder way."
+            subtitle="Real reviews from guests who experienced Belize the wilder way."
           />
         </Reveal>
 

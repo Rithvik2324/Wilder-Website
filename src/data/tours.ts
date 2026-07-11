@@ -703,7 +703,7 @@ export const tours: Tour[] = [
       "Headlamp-lit limestone chambers full of stalactites and crystal formations",
       "Spot oropendolas, toucans and jungle birdlife from the saddle",
       "Cool turquoise river water on a hot Belize afternoon",
-      "lunch and stories from your local Belizean guide"
+      "lunch and stories from your local Belizian guide"
     ],
     "included": [
       "Free hotel pickup and drop-off on the Placencia peninsula",
