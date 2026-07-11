@@ -1338,12 +1338,12 @@ export const tours: Tour[] = [
       "Photography",
       "Hiking"
     ],
-    "image": "/images/themes/birdwatching.jpg",
+    "image": "/images/cockscomb/cock1.jpeg",
     "gallery": [
-      "/images/themes/birdwatching.jpg",
-      "/images/themes/macaw.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/beach.jpg"
+      "/images/cockscomb/cock2.jpg",
+      "/images/cockscomb/cock3.jpg",
+      "/images/cockscomb/cock4.webp",
+      "/images/cockscomb/cock5.webp"
     ],
     "rating": 4.8,
     "reviews": 143,
