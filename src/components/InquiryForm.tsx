@@ -34,7 +34,7 @@ export function InquiryForm({
   const [phone, setPhone] = useState("");
   const [tour, setTour] = useState(lockedTourName ?? defaultTourName ?? "");
   const [date, setDate] = useState("");
-  const [guests, setGuests] = useState(2);
+  const [guests, setGuests] = useState(3);
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [company, setCompany] = useState(""); // honeypot — real users leave this empty
@@ -166,7 +166,7 @@ export function InquiryForm({
           <div>
             <span id="if-guests-label" className={labelCls}><Users className="mr-1 inline h-3.5 w-3.5" /> Guests</span>
             <div role="group" aria-labelledby="if-guests-label" className="flex items-center justify-between rounded-xl border border-ink/15 bg-sand-50 px-2 py-1.5">
-              <button type="button" aria-label="Fewer guests" onClick={() => setGuests((g) => Math.max(1, g - 1))} className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-ink shadow-sm transition hover:bg-jungle-50">
+              <button type="button" aria-label="Fewer guests" onClick={() => setGuests((g) => Math.max(3, g - 1))} disabled={guests <= 3} className="flex h-9 w-9 items-center justify-center rounded-lg bg-white text-ink shadow-sm transition hover:bg-jungle-50 disabled:cursor-not-allowed disabled:opacity-50">
                 <Minus className="h-4 w-4" />
               </button>
               <span className="text-base font-bold text-ink" aria-live="polite">{guests}</span>
