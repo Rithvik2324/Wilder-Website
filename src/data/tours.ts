@@ -1423,10 +1423,10 @@ export const tours: Tour[] = [
     ],
     "image": "/images/themes/macaw.jpg",
     "gallery": [
-      "/images/scarlet_Macaw/m2.jpg",
-      "/images/scarlet_Macaw/m3.jpg",
-      "/images/scarlet_Macaw/m4.jpg",
-      "/images/scarlet_Macaw/m5.jpg"
+      "/images/scarlet_macaw/m2.jpg",
+      "/images/scarlet_macaw/m3.jpg",
+      "/images/scarlet_macaw/m4.jpg",
+      "/images/scarlet_macaw/m5.jpg"
     ],
     "rating": 4.9,
     "reviews": 186,
