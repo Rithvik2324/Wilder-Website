@@ -9,7 +9,7 @@ import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { TourCard } from "@/components/TourCard";
 import { SmartImage } from "@/components/SmartImage";
 import { site } from "@/data/site";
-import { featuredTours, fullDayTours, halfDayTours, allInterests } from "@/data/tours";
+import { featuredTours, fullDayTours, halfDayTours, multiDayTours, allInterests } from "@/data/tours";
 import { HERO_IMAGES, MISC_IMAGES } from "@/lib/images";
 
 export default function HomePage() {
@@ -34,11 +34,20 @@ export default function HomePage() {
           </Reveal>
 
           <Stagger className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {featuredTours.slice(0, 6).map((tour, i) => (
-              <StaggerItem key={tour.slug} className="h-full">
-                <TourCard tour={tour} priority={i < 3} className="h-full" />
-              </StaggerItem>
-            ))}
+            {[
+              ...multiDayTours.filter((tour) => tour.slug === "wilder-belize-adventures-7-day-premium-experience"),
+              ...featuredTours.filter(
+                (tour) =>
+                  tour.slug !== "mayan-sky-zip-line-river-tubing-waterfall" &&
+                  tour.slug !== "wilder-belize-adventures-7-day-premium-experience",
+              ),
+            ]
+              .slice(0, 6)
+              .map((tour, i) => (
+                <StaggerItem key={tour.slug} className="h-full">
+                  <TourCard tour={tour} priority={i < 3} className="h-full" />
+                </StaggerItem>
+              ))}
           </Stagger>
 
           <div className="mt-10 text-center md:hidden">
@@ -67,7 +76,7 @@ export default function HomePage() {
               {
                 href: "/tours?category=multi-day",
                 title: "Multi-Day Packages",
-                count: featuredTours.filter((tour) => tour.category === "Multi-day").length,
+                count: multiDayTours.length,
                 img: HERO_IMAGES.canopy,
                 theme: "jungle-hike",
                 blurb: "Epic multi-day journeys that combine Belize's best adventures into one unforgettable experience.",

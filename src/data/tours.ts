@@ -429,12 +429,12 @@ export const tours: Tour[] = [
       "Nature",
       "Family"
     ],
-    "image": "/images/themes/chocolate.jpg",
+    "image": "/images/choco_making/c5.png",
     "gallery": [
-      "/images/themes/chocolate.jpg",
-      "/images/themes/mayan-ruins.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/river-tubing.jpg"
+      "/images/choco_making/c1.jpg",
+      "/images/choco_making/c2.jpg",
+      "/images/choco_making/c3.jpg",
+      "/images/choco_making/c4.jpg"
     ],
     "rating": 4.9,
     "reviews": 210,
@@ -1179,12 +1179,12 @@ export const tours: Tour[] = [
       "Water",
       "Family"
     ],
-    "image": "/images/themes/monkey-river.jpg",
+    "image": "/images/monkey_river/mon1.jpg",
     "gallery": [
-      "/images/themes/monkey-river.jpg",
-      "/images/themes/macaw.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/waterfall.jpg"
+      "/images/monkey_river/mon2.jpg",
+      "/images/monkey_river/mon3.jpg",
+      "/images/monkey_river/mon4.jpg",
+      "/images/monkey_river/mon5.jpg"
     ],
     "rating": 4.8,
     "reviews": 57,
@@ -1262,12 +1262,12 @@ export const tours: Tour[] = [
       "Family",
       "Nature"
     ],
-    "image": "/images/themes/chocolate.jpg",
+    "image": "/images/choco_making/c5.png",
     "gallery": [
-      "/images/themes/chocolate.jpg",
-      "/images/themes/mayan-ruins.jpg",
-      "/images/themes/river-tubing.jpg",
-      "/images/themes/jungle-hike.jpg"
+      "/images/choco_making/c4.jpg",
+      "/images/choco_making/c2.jpg",
+      "/images/choco_making/c3.jpg",
+      "/images/choco_making/c6.png"
     ],
     "rating": 4.7,
     "reviews": 100,
@@ -1423,10 +1423,10 @@ export const tours: Tour[] = [
     ],
     "image": "/images/themes/macaw.jpg",
     "gallery": [
-      "/images/themes/macaw.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/beach.jpg",
-      "/images/heroes/hero-waterfall.jpg"
+      "/images/Scarlet_Macaw/m2.jpg",
+      "/images/Scarlet_Macaw/m3.jpg",
+      "/images/Scarlet_Macaw/m4.jpg",
+      "/images/Scarlet_Macaw/m5.jpg"
     ],
     "rating": 4.9,
     "reviews": 186,
@@ -1504,12 +1504,12 @@ export const tours: Tour[] = [
       "Nature",
       "Family"
     ],
-    "image": "/images/themes/zipline.jpg",
+    "image": "/images/zip_rivertube/r1.JPG",
     "gallery": [
-      "/images/themes/zipline.jpg",
-      "/images/themes/waterfall.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/river-tubing.jpg"
+      "/images/zip_rivertube/r2.JPG",
+      "/images/zip_rivertube/r3.JPG",
+      "/images/zip_rivertube/r6.JPG",
+      "/images/zip_rivertube/r5.JPG"
     ],
     "rating": 4.6,
     "reviews": 49,
@@ -1585,12 +1585,12 @@ export const tours: Tour[] = [
       "Hiking",
       "Nature"
     ],
-    "image": "/images/themes/zipline.jpg",
+    "image": "/images/zip_waterfall/w1.JPG",
     "gallery": [
-      "/images/themes/zipline.jpg",
-      "/images/themes/waterfall.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/heroes/hero-coast.jpg"
+      "/images/zip_waterfall/w2.JPG",
+      "/images/zip_waterfall/w3.JPG",
+      "/images/zip_waterfall/w4.JPG",
+      "/images/zip_waterfall/w5.JPG"
     ],
     "rating": 4.8,
     "reviews": 92,
@@ -1753,12 +1753,12 @@ export const tours: Tour[] = [
       "Family",
       "Photography"
     ],
-    "image": "/images/themes/horseback.jpg",
+    "image": "/images/horse_riding/h2.png",
     "gallery": [
-      "/images/themes/horseback.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/macaw.jpg",
-      "/images/themes/river-tubing.jpg"
+      "/images/horse_riding/h2.png",
+      "/images/horse_riding/h4.JPG",
+      "/images/horse_riding/h5.JPG",
+      "/images/horse_riding/h1.JPG"
     ],
     "rating": 4.7,
     "reviews": 178,
@@ -1837,12 +1837,13 @@ export const tours: Tour[] = [
       "Water",
       "Nature"
     ],
-    "image": "/images/themes/zipline.jpg",
+    "image": "/images/zip_atv/at1.JPG",
     "gallery": [
-      "/images/themes/zipline.jpg",
-      "/images/themes/waterfall.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/heroes/hero-canopy.jpg"
+      "/images/zip_atv/at1.JPG",
+      "/images/zip_atv/at2.JPG",
+      "/images/zip_atv/at3.jpg",
+      "/images/zip_atv/at4.JPG",
+      "/images/zip_atv/at5.JPG"
     ],
     "rating": 4.8,
     "reviews": 41,
@@ -2247,6 +2248,7 @@ export const tours: Tour[] = [
 
 export const fullDayTours = tours.filter((t) => t.category === "Full Day");
 export const halfDayTours = tours.filter((t) => t.category === "Half Day");
+export const multiDayTours = tours.filter((t) => t.category === "Multi-day");
 export const featuredTours = tours.filter((t) => t.featured);
 export function getTour(slug: string): Tour | undefined {
   return tours.find((t) => t.slug === slug);
