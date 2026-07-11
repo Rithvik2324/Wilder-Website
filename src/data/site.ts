@@ -57,7 +57,7 @@ export const site = {
       "detail": "Wilder is run from Placencia by a Belizean family, not booked through a faraway call center, so you get straight answers and real local know-how."
     },
     {
-      "title": "Small Groups, Real Connection",
+      "title": "Premium exclusive groups",
       "detail": "We cap our trips so your guide can slow down for the toucan in the canopy or the story behind a Maya glyph instead of herding a crowd."
     },
     {

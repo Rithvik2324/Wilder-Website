@@ -42,7 +42,7 @@ export default function AboutPage() {
             </div>
           </Reveal>
           <Reveal>
-            <SectionHeading kicker="The Wilder way" title="Real Belize, shown by real Belizeans" />
+            <SectionHeading kicker="The Wilder way" title="Real Belize, shown by real Belizians" />
             <div className="mt-5 space-y-4 leading-relaxed text-ink-soft">
               {paragraphs.map((p, i) => <p key={i}>{p}</p>)}
             </div>

@@ -852,7 +852,7 @@ export const tours: Tour[] = [
     ],
     "rating": 4.8,
     "reviews": 65,
-    "featured": false,
+    "featured": true,
     "theme": "mayan-ruins"
   },
   {

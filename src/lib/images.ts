@@ -1,13 +1,13 @@
 // Hero imagery and theme-based gradient fallbacks.
 export const HERO_IMAGES = {
   waterfall: "/images/heroes/hero-waterfall.jpg",
-  canopy: "/images/heroes/hero-canopy.jpg",
-  coast: "/images/heroes/hero-coast.jpg",
+  canopy: "/images/zip_waterfall/w2.JPG",
+  coast: "/images/monkey_river/turtle.jpg",
   cave: "/images/heroes/hero-cave.jpg",
 } as const;
 
 export const MISC_IMAGES = {
-  about: "/images/misc/about.jpg",
+  about: "/images/zip_waterfall/w2.JPG",
   placencia: "/images/misc/placencia.jpg",
   jungle: "/images/misc/jungle-texture.jpg",
   snorkel: "/images/misc/snorkel.jpg",

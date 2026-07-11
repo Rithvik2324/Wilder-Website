@@ -38,8 +38,12 @@ export default function HomePage() {
               ...multiDayTours.filter((tour) => tour.slug === "wilder-belize-adventures-7-day-premium-experience"),
               ...featuredTours.filter(
                 (tour) =>
-                  tour.slug !== "mayan-sky-zip-line-river-tubing-waterfall" &&
-                  tour.slug !== "wilder-belize-adventures-7-day-premium-experience",
+                  tour.slug === "xunantunich-cave-tubing" ||
+                  (
+                    tour.slug !== "mayan-sky-zip-line-river-tubing-waterfall" &&
+                    tour.slug !== "wilder-belize-adventures-7-day-premium-experience" &&
+                    tour.slug !== "bocawina-jungle-zipline-adventure"
+                  ),
               ),
             ]
               .slice(0, 6)
@@ -124,7 +128,7 @@ export default function HomePage() {
               <SectionHeading
                 light
                 kicker="Why travelers choose Wilder"
-                title="Real Belize, real Belizeans"
+                title="Real Belize, real Belizians"
               />
               <ul className="mt-8 space-y-5">
                 {site.whyChooseUs.map((w) => (
