@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { company } from "@/data/site";
+import ChatWidget from "@/components/chatbotc/ChatWidget";
 
 const display = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -97,6 +98,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ChatWidget />
       </body>
     </html>
   );
