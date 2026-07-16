@@ -22,7 +22,7 @@ export default function AboutPage() {
         image={HERO_IMAGES.canopy}
         theme="jungle-hike"
         kicker="Who we are?"
-        title="Belizian owned, locally operated tour company"
+        title="Belizean owned, locally operated tour company"
         subtitle={site.aboutShort}
         crumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
@@ -42,7 +42,7 @@ export default function AboutPage() {
             </div>
           </Reveal>
           <Reveal>
-            <SectionHeading kicker="The Wilder way" title="Real Belize, shown by real Belizians" />
+            <SectionHeading kicker="The Wilder way" title="Real Belize, shown by real Belizeans" />
             <div className="mt-5 space-y-4 leading-relaxed text-ink-soft">
               {paragraphs.map((p, i) => <p key={i}>{p}</p>)}
             </div>

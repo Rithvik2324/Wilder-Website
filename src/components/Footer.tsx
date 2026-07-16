@@ -46,7 +46,7 @@ export function Footer() {
                 </span>
               </Link>
               <p className="mt-4 max-w-xs text-sm leading-relaxed">
-                Belizian owned tour company in Placencia Village taking travelers deep into the real Belize — jungle,
+                Belizean owned tour company in Placencia Village taking travelers deep into the real Belize — jungle,
                 waterfalls, caves, and Maya country.
               </p>
               <div className="mt-5 flex gap-2.5">

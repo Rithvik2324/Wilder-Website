@@ -44,36 +44,68 @@ export function InquiryForm({
   const today = new Date().toISOString().split("T")[0];
   const rowCls = cn("grid gap-4", !compact && "sm:grid-cols-2");
 
-  async function onSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setState("loading");
-    setError("");
-    try {
-      const res = await fetch("/api/inquiry", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          type: mode,
-          name,
-          email,
-          phone,
-          tour: mode === "booking" ? tour : "",
-          date: mode === "booking" ? date : "",
-          guests: mode === "booking" ? String(guests) : "",
-          subject,
-          message,
-          company, // honeypot
-        }),
-      });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data?.error || "Something went wrong.");
-      setState("done");
-    } catch (err) {
-      setState("error");
-      setError(err instanceof Error ? err.message : "Something went wrong.");
-    }
-  }
+  
+async function onSubmit(e: React.FormEvent) {
+  e.preventDefault();
 
+  setState("loading");
+  setError("");
+
+  try {
+    const selectedTour =
+      tours.find((t) => t.name === tour) ??
+      tours.find((t) => t.name === lockedTourName);
+
+    if (!selectedTour) {
+      throw new Error("Tour not found.");
+    }
+
+    const res = await fetch("/api/payment", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        tourName: selectedTour.name,
+        amount: selectedTour.price,
+        name,
+        email,
+        phone,
+        date,
+        guests,
+        message,
+      }),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.message || "Payment initialization failed.");
+    }
+
+    sessionStorage.setItem(
+  "pendingBooking",
+  JSON.stringify({
+    name,
+    email,
+    phone,
+    tour: selectedTour.name,
+    date,
+    guests,
+    message,
+    amount: selectedTour.price,
+    orderId: data.orderId,
+  })
+);
+
+window.location.href = data.paymentUrl;
+  } catch (err) {
+    setState("error");
+    setError(
+      err instanceof Error ? err.message : "Something went wrong."
+    );
+  }
+}
   if (state === "done") {
     return (
       <div className={cn("rounded-3xl bg-jungle-800 p-8 text-center text-white", className)}>
@@ -201,13 +233,18 @@ export function InquiryForm({
           <Loader2 className="h-5 w-5 animate-spin" />
         ) : (
           <>
-            {submitLabel ?? (mode === "contact" ? "Send message" : "Request to book")}
+            {
+  submitLabel ??
+  (mode === "contact"
+    ? "Send Message"
+    : "Pay & Book Now")
+}
             <Check className="h-4 w-4" />
           </>
         )}
       </button>
       <p className="text-center text-xs text-ink-faint">
-        No payment required now — we&apos;ll confirm availability &amp; details by email first.
+        Secure payment powered by Belize Bank. Your booking will be confirmed after successful payment.
       </p>
     </form>
   );
