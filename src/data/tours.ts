@@ -2063,7 +2063,7 @@ export const tours: Tour[] = [
     "Discover Belize's wild side on a premium 3-day experience featuring ATV jungle adventures, ziplining, river tubing, ancient Maya history, and the breathtaking Inland Blue Hole.",
 
   description:
-    "Designed for discerning travellers, this luxury 3-day experience blends adrenaline, culture, and comfort with upgraded service, professional guiding, and premium inclusions. Explore Belize's spectacular inland attractions without compromising on quality, convenience, or exclusivity.\n\nThis experience is designed to be completed within a flexible 5-day pre-arranged schedule, allowing you and your family or friends to enjoy rest days between activities. Starting from USD $725 per person, the package accommodates groups of 3–10 guests, with a 10% discount available for groups of six or more.",
+    "Designed for discerning travellers, this luxury 3-day experience blends adrenaline, culture, and comfort with upgraded service, professional guiding, and premium inclusions. Explore Belize's spectacular inland attractions without compromising on quality, convenience, or exclusivity.\n\nThis experience is designed to be completed within a flexible 5-day pre-arranged schedule, allowing you and your family or friends to enjoy rest days between activities. Starting from USD $725 per person, the package accommodates groups of 3–10 guests.",
 
   highlights: [
     "Luxury private 3-day inland adventure",

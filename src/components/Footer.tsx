@@ -72,6 +72,7 @@ export function Footer() {
                 <li><Link href="/tours" className="transition hover:text-coral-300">All Tours</Link></li>
                 <li><Link href="/tours?category=full-day" className="transition hover:text-coral-300">Full-Day Adventures</Link></li>
                 <li><Link href="/tours?category=half-day" className="transition hover:text-coral-300">Half-Day Adventures</Link></li>
+                <li><Link href="/tours?category=multi-day" className="transition hover:text-coral-300">Multi-Day Adventures</Link></li>
                 <li><Link href="/transfers" className="transition hover:text-coral-300">Ground Transfers</Link></li>
               </ul>
             </div>

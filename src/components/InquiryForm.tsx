@@ -98,7 +98,7 @@ async function onSubmit(e: React.FormEvent) {
   })
 );
 
-window.location.href = data.paymentUrl;
+window.location.href = data.paymentUrl; 
   } catch (err) {
     setState("error");
     setError(
