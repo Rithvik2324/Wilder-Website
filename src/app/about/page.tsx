@@ -7,7 +7,7 @@ import { SmartImage } from "@/components/SmartImage";
 import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 import { Icon } from "@/components/Icon";
 import { site } from "@/data/site";
-import { HERO_IMAGES, MISC_IMAGES } from "@/lib/images";
+import { HERO_IMAGES, MISC_IMAGES, THEMES_IMAGES } from "@/lib/images";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -33,7 +33,7 @@ export default function AboutPage() {
           <Reveal>
             <div className="relative">
               <div className="overflow-hidden rounded-3xl shadow-lift">
-                <SmartImage src={MISC_IMAGES.placencia} alt="Placencia village waterfront, Belize" theme="beach" className="aspect-[4/5]" sizes="(max-width:1024px) 100vw, 50vw" />
+                <SmartImage src={THEMES_IMAGES.cave} alt="Placencia village waterfront, Belize" theme="beach" className="aspect-[4/5]" sizes="(max-width:1024px) 100vw, 50vw" />
               </div>
               <div className="absolute -bottom-5 -right-4 rounded-2xl bg-coral-500 px-6 py-5 text-white shadow-glow">
                 <div className="font-display text-3xl font-extrabold">4.9★</div>

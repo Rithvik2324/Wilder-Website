@@ -96,12 +96,12 @@ export const tours: Tour[] = [
       "Nature",
       "Water"
     ],
-    "image": "/images/themes/mayan-ruins.jpg",
+    "image": "/images/themes/xunantunich.jpg",
     "gallery": [
-      "/images/themes/mayan-ruins.jpg",
-      "/images/T-bird.jpeg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/waterfall.jpg"
+      "/images/themes/xunantunich.jpg",
+      "/images/themes/xunantunich-belize-maya-temple.jpg",
+      "/images/themes/inland Blue Hole.jpg",
+      "/images/themes/jungle-hike.jpg"
     ],
     "rating": 4.9,
     "reviews": 38,
@@ -262,12 +262,12 @@ export const tours: Tour[] = [
       "Water",
       "Family"
     ],
-    "image": "/images/themes/cave-tubing.jpg",
+    "image": "/images/themes/Copy of Cave Tubing.jpg",
     "gallery": [
-      "/images/themes/cave-tubing.jpg",
+      "/images/themes/Copy of Cave Tubing.jpg",
       "/images/themes/zipline.jpg",
       "/images/themes/jungle-hike.jpg",
-      "/images/themes/waterfall.jpg"
+      "/images/themes/e9.jpg"
     ],
     "rating": 4.7,
     "reviews": 124,
@@ -429,7 +429,7 @@ export const tours: Tour[] = [
       "Nature",
       "Family"
     ],
-    "image": "/images/choco_making/c5.png",
+    "image": "/images/choco_making/c1.jpg",
     "gallery": [
       "/images/choco_making/c1.jpg",
       "/images/choco_making/c2.jpg",
@@ -843,12 +843,12 @@ export const tours: Tour[] = [
       "Nature",
       "Photography"
     ],
-    "image": "/images/themes/mayan-ruins.jpg",
+    "image": "/images/themes/belize-cave-tubing-6.jpg",
     "gallery": [
-      "/images/themes/mayan-ruins.jpg",
-      "/images/themes/chocolate.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/beach.jpg"
+      "/images/themes/belize-cave-tubing-6.jpg",
+      "/images/themes/xunantunich-belize-maya-temple.jpg",
+      "/images/themes/c726115be41a098e496ded549f727108.jpg",
+      "/images/themes/CABZXUNRUINS-2.jpg"
     ],
     "rating": 4.8,
     "reviews": 65,
@@ -1262,7 +1262,7 @@ export const tours: Tour[] = [
       "Family",
       "Nature"
     ],
-    "image": "/images/choco_making/c5.png",
+    "image": "/images/choco_making/c2.jpg",
     "gallery": [
       "/images/choco_making/c4.jpg",
       "/images/choco_making/c2.jpg",
@@ -1673,7 +1673,7 @@ export const tours: Tour[] = [
     "image": "/images/themes/atv.jpg",
     "gallery": [
       "/images/themes/atv.jpg",
-      "/images/themes/zipline.jpg",
+      "/images/themes/mayanking-waterfall.jpg",
       "/images/themes/waterfall.jpg",
       "/images/themes/jungle-hike.jpg"
     ],
@@ -1922,7 +1922,7 @@ export const tours: Tour[] = [
       "Nature",
       "Photography"
     ],
-    "image": "/images/themes/atv.jpg",
+    "image": "/images/themes/zipline.jpg",
     "gallery": [
       "/images/themes/atv.jpg",
       "/images/themes/zipline.jpg",

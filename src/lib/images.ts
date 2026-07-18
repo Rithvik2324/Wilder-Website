@@ -2,8 +2,13 @@
 export const HERO_IMAGES = {
   waterfall: "/images/heroes/hero-waterfall.jpg",
   canopy: "/images/zip_waterfall/w2.JPG",
+  boating:"/images/7-DAY-2.avif",
   coast: "/images/monkey_river/turtle.jpg",
   cave: "/images/heroes/hero-cave.jpg",
+} as const;
+
+export const THEMES_IMAGES = {
+  cave: "/images/themes/belize-cave-tubing-6.jpg",
 } as const;
 
 export const MISC_IMAGES = {

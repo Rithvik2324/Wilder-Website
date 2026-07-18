@@ -37,6 +37,7 @@ export function InquiryForm({
   const [guests, setGuests] = useState(3);
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [hotel, setHotel] = useState("");
   const [company, setCompany] = useState(""); // honeypot — real users leave this empty
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [error, setError] = useState("");
@@ -209,7 +210,20 @@ window.location.href = data.paymentUrl;
           </div>
         </div>
       )}
+      <div>
+  <label className={labelCls} htmlFor="if-hotel">
+    Hotel / Pickup Location
+  </label>
 
+  <input
+    id="if-hotel"
+    className={inputCls}
+    value={hotel}
+    onChange={(e) => setHotel(e.target.value)}
+    placeholder="Placencia Resort, AirBnB, etc."
+    required={mode === "booking"}
+  />
+</div>
       <div>
         <label className={labelCls} htmlFor="if-message">
           <MessageSquare className="mr-1 inline h-3.5 w-3.5" />
@@ -225,7 +239,50 @@ window.location.href = data.paymentUrl;
           placeholder={mode === "contact" ? "Tell us what you're dreaming up…" : "Hotel name, kids' ages, dietary needs, special requests…"}
         />
       </div>
+      {mode === "booking" && (() => {
+  const selectedTour =
+    tours.find((t) => t.name === tour) ??
+    tours.find((t) => t.name === lockedTourName);
 
+  const total = (selectedTour?.price ?? 0) * guests;
+
+  return (
+    <div className="rounded-2xl border border-jungle-200 bg-jungle-50 p-4">
+      <h3 className="mb-3 text-lg font-semibold text-jungle-800">
+        Booking Summary
+      </h3>
+
+      <div className="space-y-2 text-sm">
+        <div className="flex justify-between">
+          <span>Tour</span>
+          <span>{selectedTour?.name}</span>
+        </div>
+
+        <div className="flex justify-between">
+          <span>Date</span>
+          <span>{date || "-"}</span>
+        </div>
+
+        <div className="flex justify-between">
+          <span>Guests</span>
+          <span>{guests}</span>
+        </div>
+
+        <div className="flex justify-between">
+          <span>Pickup</span>
+          <span>{hotel || "-"}</span>
+        </div>
+
+        <hr />
+
+        <div className="flex justify-between text-lg font-bold text-jungle-700">
+          <span>Total</span>
+          <span>${total}</span>
+        </div>
+      </div>
+    </div>
+  );
+})()}
       {state === "error" && <p className="text-sm font-semibold text-coral-600">{error}</p>}
 
       <button type="submit" disabled={state === "loading"} className="btn btn-primary w-full">

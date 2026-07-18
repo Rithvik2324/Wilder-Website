@@ -81,7 +81,7 @@ export default function HomePage() {
                 href: "/tours?category=multi-day",
                 title: "Multi-Day Packages",
                 count: multiDayTours.length,
-                img: HERO_IMAGES.canopy,
+                img: HERO_IMAGES.boating,
                 theme: "jungle-hike",
                 blurb: "Epic multi-day journeys that combine Belize's best adventures into one unforgettable experience.",
               },
