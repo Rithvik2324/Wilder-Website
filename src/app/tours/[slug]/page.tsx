@@ -8,7 +8,6 @@ import {
 import { getTour, tours } from "@/data/tours";
 import { TourGallery } from "@/components/tours/TourGallery";
 import { MobileBookingBar } from "@/components/tours/MobileBookingBar";
-import { PayNowButton } from "@/components/tours/PayNowButton";
 import { InquiryForm } from "@/components/InquiryForm";
 import { TourCard } from "@/components/TourCard";
 import { StarRating } from "@/components/StarRating";
@@ -249,7 +248,11 @@ export default async function TourDetailPage({ params }: { params: Promise<{ slu
                   ))}
                 </div>
 
-                <PayNowButton tourName={tour.name} amount={tour.price} />
+                <div className="border-t border-ink/10 pt-5">
+                  <h2 className="font-display text-xl font-bold text-ink">Book your tour</h2>
+                  <p className="mt-1 text-sm text-ink-soft">Enter your details before continuing to secure payment.</p>
+                  <InquiryForm lockedTourName={tour.name} compact className="mt-5" submitLabel="Pay Now" />
+                </div>
               </div>
 
               <div className="mt-4 flex items-center justify-center gap-2 rounded-2xl bg-jungle-50 p-4 text-center text-sm text-jungle-800">
