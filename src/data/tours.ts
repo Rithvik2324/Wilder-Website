@@ -99,9 +99,9 @@ export const tours: Tour[] = [
     "image": "/images/themes/xunantunich.jpg",
     "gallery": [
       "/images/themes/xunantunich.jpg",
-      "/images/themes/xunantunich-belize-maya-temple.jpg",
       "/images/themes/inland Blue Hole.jpg",
-      "/images/themes/jungle-hike.jpg"
+      "/images/themes/xunantunich-belize-maya-temple.jpg",
+      "/images/themes/Inland-Blue-Hole-Belize-3.jpg"
     ],
     "rating": 4.9,
     "reviews": 38,
@@ -179,12 +179,12 @@ export const tours: Tour[] = [
       "Nature",
       "Family"
     ],
-    "image": "/images/Zip.jpeg",
+    "image": "/images/themes/March 28-3.jpg",
     "gallery": [
-      "/images/Zip.jpeg",
-      "/images/cavetubing.jpeg",
-      "/images/Scarlet 4.jpeg",
-      "/images/Monkey.jpeg"
+      "/images/themes/March 28-3.jpg",
+      "/images/themes/March 28-2.jpg",
+      "/images/themes/Feb 14-6.jpg",
+      "/images/themes/Copy of waterfall.jpg"
     ],
     "rating": 4.8,
     "reviews": 81,
@@ -265,8 +265,8 @@ export const tours: Tour[] = [
     "image": "/images/themes/Copy of Cave Tubing.jpg",
     "gallery": [
       "/images/themes/Copy of Cave Tubing.jpg",
-      "/images/themes/zipline.jpg",
-      "/images/themes/jungle-hike.jpg",
+      "/images/themes/belize-cave-tubing-6.jpg",
+      "/images/themes/Zip.jpg",
       "/images/themes/e9.jpg"
     ],
     "rating": 4.7,
@@ -345,12 +345,12 @@ export const tours: Tour[] = [
       "Wildlife",
       "Photography"
     ],
-    "image": "/images/themes/mayan-ruins.jpg",
+    "image": "/images/themes/tikal-national-park-from-guatemala.jpg",
     "gallery": [
-      "/images/themes/mayan-ruins.jpg",
-      "/images/themes/chocolate.jpg",
-      "/images/themes/macaw.jpg",
-      "/images/themes/beach.jpg"
+      "/images/themes/tikal-national-park-from-guatemala.jpg",
+      "/images/themes/Tikal-1.jpg",
+      "/images/themes/Tikal-scaled-e1618237501586.webp",
+      "/images/themes/tikal2.webp"
     ],
     "rating": 4.8,
     "reviews": 167,
@@ -429,12 +429,12 @@ export const tours: Tour[] = [
       "Nature",
       "Family"
     ],
-    "image": "/images/choco_making/c1.jpg",
+    "image": "/images/choco_making/choco.jpeg",
     "gallery": [
-      "/images/choco_making/c1.jpg",
-      "/images/choco_making/c2.jpg",
-      "/images/choco_making/c3.jpg",
-      "/images/choco_making/c4.jpg"
+      "/images/choco_making/choco.jpeg",
+      "/images/choco_making/seeds.jpg",
+      "/images/choco_making/Rubber tree .jpg",
+      "/images/choco_making/IMG_7246.JPG"
     ],
     "rating": 4.9,
     "reviews": 210,
@@ -512,12 +512,12 @@ export const tours: Tour[] = [
       "Water",
       "Nature"
     ],
-    "image": "/images/themes/cave-tubing.jpg",
+    "image": "/images/themes/belize-cave-tubing.jpg",
     "gallery": [
-      "/images/themes/cave-tubing.jpg",
-      "/images/themes/zipline.jpg",
-      "/images/themes/mayan-ruins.jpg",
-      "/images/themes/waterfall.jpg"
+      "/images/themes/belize-cave-tubing.jpg",
+      "/images/themes/belize-cave-tubing-heading.jpg",
+      "/images/themes/Cave-Tubing-Belize.jpg",
+      "/images/themes/Copy of c726115be41a098e496ded549f727108.jpg"
     ],
     "rating": 4.6,
     "reviews": 73,
@@ -594,9 +594,9 @@ export const tours: Tour[] = [
     "image": "/images/davis-falls.jpeg",
     "gallery": [
       "/images/davis-falls.jpeg",
-      "/images/themes/zipline.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/heroes/hero-coast.jpg"
+      "/images/themes/davis1.jpg",
+      "/images/themes/davis2.jpg",
+      "/images/themes/davis4.jpg"
     ],
     "rating": 4.8,
     "reviews": 116,
@@ -673,12 +673,12 @@ export const tours: Tour[] = [
       "Culture",
       "Adrenaline"
     ],
-    "image": "/images/pot-image.jpeg",
+    "image": "/images/themes/ATM Cave Adve.jpg",
     "gallery": [
+      "/images/themes/ATM Cave Adve.jpg",
+      "/images/themes/ATM Cave Fun.webp",
       "/images/pot-image.jpeg",
-      "/images/themes/zipline.jpg",
-      "/images/themes/mayan-ruins.jpg",
-      "/images/themes/chocolate.jpg"
+      "/images/themes/ATM-cave-tour-8.webp"
     ],
     "rating": 4.9,
     "reviews": 159,
@@ -758,12 +758,12 @@ export const tours: Tour[] = [
       "History",
       "Wildlife"
     ],
-    "image": "/images/Jungle-saddle.jpeg",
+    "image": "/images/themes/Green Acres 3.jpg",
     "gallery": [
-      "/images/pot-image.jpeg",
-      "/images/themes/zipline.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/mayan-ruins.jpg"
+      "/images/themes/Green Acres 3.jpg",
+      "/images/themes/C0EF66F4-243B-4401-8281-AB5C47616AE3.JPG",
+      "/images/themes/Green Acres 5.jpg",
+      "/images/themes/85F6D2B3-499A-4DE2-AA5C-AC424FBB4817.JPG"
     ],
     "rating": 4.7,
     "reviews": 202,
@@ -928,12 +928,12 @@ export const tours: Tour[] = [
       "Water",
       "Culture"
     ],
-    "image": "/images/themes/kayak.jpg",
+    "image": "/images/themes/Kayaking 2.jpg",
     "gallery": [
-      "/images/themes/kayak.jpg",
-      "/images/themes/zipline.jpg",
-      "/images/themes/mayan-ruins.jpg",
-      "/images/themes/waterfall.jpg"
+      "/images/themes/Kayaking 2.jpg",
+      "/images/themes/Copy of xunantunich-aerial-view.jpg",
+      "/images/themes/CABZCAVEKAYAK-2.jpg",
+      "/images/themes/Copy of CABZXUNRUINS-2.jpg"
     ],
     "rating": 4.7,
     "reviews": 108,
@@ -1013,12 +1013,12 @@ export const tours: Tour[] = [
       "Water",
       "Family"
     ],
-    "image": "/images/River-jungle.jpeg",
+    "image": "/images/themes/jaguar-cockscomb-TR_150426.jpg",
     "gallery": [
-      "/images/themes/waterfall.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/macaw.jpg",
-      "/images/themes/river-tubing.jpg"
+      "/images/themes/jaguar-cockscomb-TR_150426.jpg",
+      "/images/themes/jaguar-cockscomb-TR_070310.jpg",
+      "/images/themes/Bens Bluff.webp",
+      "/images/themes/South Stann Creek.webp"
     ],
     "rating": 4.9,
     "reviews": 151,
