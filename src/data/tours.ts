@@ -1096,12 +1096,12 @@ export const tours: Tour[] = [
       "Hiking",
       "Photography"
     ],
-    "image": "/images/Another-zipline.jpeg",
+    "image": "/images/themes/Bocawina Hammock Bridge.jpg",
     "gallery": [
-      "/images/themes/zipline.jpg",
-      "/images/themes/jungle-hike.jpg",
-      "/images/themes/beach.jpg",
-      "/images/heroes/hero-waterfall.jpg"
+      "/images/themes/Bocawina Hammock Bridge.jpg",
+      "/images/themes/Bocawina Zip lining.jpg",
+      "/images/themes/Bocawina Zip Line.jpg",
+      "/images/themes/Bocawina Fun Zip Lining.jpg"
     ],
     "rating": 4.9,
     "reviews": 194,
@@ -1585,9 +1585,9 @@ export const tours: Tour[] = [
       "Hiking",
       "Nature"
     ],
-    "image": "/images/zip_waterfall/w1.JPG",
+    "image": "/images/zip_waterfall/w2.JPG",
     "gallery": [
-      "/images/zip_waterfall/w2.JPG",
+      "/images/zip_waterfall/w1.JPG",
       "/images/zip_waterfall/w3.JPG",
       "/images/zip_waterfall/w4.JPG",
       "/images/zip_waterfall/w5.JPG"
@@ -1670,12 +1670,12 @@ export const tours: Tour[] = [
       "Nature",
       "Photography"
     ],
-    "image": "/images/themes/atv.jpg",
+    "image": "/images/themes/Copy of june 24-1.JPG",
     "gallery": [
-      "/images/themes/atv.jpg",
+      "/images/themes/Copy of june 24-1.JPG",
       "/images/themes/mayanking-waterfall.jpg",
-      "/images/themes/waterfall.jpg",
-      "/images/themes/jungle-hike.jpg"
+      "/images/themes/Copy of june 24-13.JPG",
+      "/images/themes/Copy of mayanking.png"
     ],
     "rating": 4.9,
     "reviews": 135,
@@ -1922,12 +1922,12 @@ export const tours: Tour[] = [
       "Nature",
       "Photography"
     ],
-    "image": "/images/themes/zipline.jpg",
+    "image": "/images/themes/Copy of june 24-2.JPG",
     "gallery": [
-      "/images/themes/atv.jpg",
-      "/images/themes/zipline.jpg",
-      "/images/themes/waterfall.jpg",
-      "/images/themes/jungle-hike.jpg"
+      "/images/themes/Copy of june 24-2.JPG",
+      "/images/themes/mayanking-waterfall.jpg",
+      "/images/themes/Copy of june 24-1.JPG",
+      "/images/themes/Copy of waterfall.jpg"
     ],
     "rating": 4.7,
     "reviews": 84,
