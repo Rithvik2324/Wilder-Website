@@ -78,7 +78,7 @@ export function Navbar() {
           </Link>
 
           {/* Desktop nav */}
-          <ul className="hidden items-center gap-1 lg:flex">
+          <ul className="hidden items-center gap-0.5 xl:flex">
             {NAV.map((item) => {
               const active = item.href === "/" ? pathname === "/" : pathname.startsWith(item.href);
               return (
@@ -86,7 +86,7 @@ export function Navbar() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "relative rounded-full px-3.5 py-2 text-sm font-semibold transition-colors",
+                      "relative whitespace-nowrap rounded-full px-2.5 py-2 text-[0.82rem] font-semibold transition-colors 2xl:px-3.5 2xl:text-sm",
                       solid
                         ? active ? "text-jungle-700" : "text-ink-soft hover:text-jungle-700"
                         : active ? "text-white" : "text-white/80 hover:text-white",
@@ -96,7 +96,7 @@ export function Navbar() {
                     {active && (
                       <motion.span
                         layoutId="nav-active"
-                        className={cn("absolute inset-x-3 -bottom-0.5 h-0.5 rounded-full", solid ? "bg-coral-500" : "bg-coral-300")}
+                        className={cn("absolute inset-x-2.5 -bottom-0.5 h-0.5 rounded-full 2xl:inset-x-3.5", solid ? "bg-coral-500" : "bg-coral-300")}
                       />
                     )}
                   </Link>
@@ -109,14 +109,14 @@ export function Navbar() {
             <a
               href={`tel:${company.phones[0].replace(/\s/g, "")}`}
               className={cn(
-                "hidden items-center gap-1.5 text-sm font-semibold transition-colors md:flex",
+                "hidden items-center gap-1.5 text-sm font-semibold transition-colors 2xl:flex",
                 solid ? "text-ink-soft hover:text-jungle-700" : "text-white/85 hover:text-white",
               )}
             >
               <Phone className="h-4 w-4" />
               <span className="hidden xl:inline">{company.phones[0]}</span>
             </a>
-            <div className="hidden items-center gap-1 md:flex">
+            <div className="hidden items-center gap-1 2xl:flex">
               {SOCIALS.map(({ href, label, Icon }) => (
                 <a
                   key={label}
@@ -135,15 +135,15 @@ export function Navbar() {
                 </a>
               ))}
             </div>
-            <Link href="/tours" className="btn btn-primary hidden h-10 px-5 py-0 text-sm sm:inline-flex">
-              Book Now
+            <Link href="/build-your-route" className="btn btn-primary hidden h-10 px-5 py-0 text-sm sm:inline-flex">
+              Build a Route
             </Link>
             <button
               type="button"
               aria-label="Open menu"
               onClick={() => setOpen(true)}
               className={cn(
-                "flex h-10 w-10 items-center justify-center rounded-xl transition-colors lg:hidden",
+                "flex h-10 w-10 items-center justify-center rounded-xl transition-colors xl:hidden",
                 solid ? "bg-jungle-50 text-ink" : "bg-white/15 text-white backdrop-blur",
               )}
             >
@@ -160,7 +160,7 @@ export function Navbar() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[60] lg:hidden"
+            className="fixed inset-0 z-[60] xl:hidden"
           >
             <div className="absolute inset-0 bg-ink/60 backdrop-blur-sm" onClick={() => setOpen(false)} />
             <motion.div
@@ -210,7 +210,7 @@ export function Navbar() {
                     </a>
                   ))}
                 </div>
-                <Link href="/tours" onClick={() => setOpen(false)} className="btn btn-primary w-full">Book an Adventure</Link>
+                <Link href="/build-your-route" onClick={() => setOpen(false)} className="btn btn-primary w-full">Build a Route</Link>
                 <a href={`tel:${company.phones[0].replace(/\s/g, "")}`} className="btn btn-ghost w-full">
                   <Phone className="h-4 w-4" /> {company.phones[0]}
                 </a>

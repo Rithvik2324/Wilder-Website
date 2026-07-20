@@ -22,7 +22,7 @@ export function Footer() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link href="/tours" className="btn btn-white">Browse Adventures <ArrowRight className="h-4 w-4" /></Link>
-              <Link href="/contact" className="btn btn-ghost border-white/40 text-white hover:bg-white hover:text-ink">
+              <Link href="/build-your-route" className="btn btn-ghost border-white/40 text-white hover:bg-white hover:text-ink">
                 Plan a Custom Trip
               </Link>
             </div>
@@ -70,6 +70,7 @@ export function Footer() {
               <h3 className="font-display text-sm font-bold uppercase tracking-wider text-white">Explore</h3>
               <ul className="mt-4 space-y-2.5 text-sm">
                 <li><Link href="/tours" className="transition hover:text-coral-300">All Tours</Link></li>
+                <li><Link href="/build-your-route" className="transition hover:text-coral-300">Build Your Route</Link></li>
                 <li><Link href="/tours?category=full-day" className="transition hover:text-coral-300">Full-Day Adventures</Link></li>
                 <li><Link href="/tours?category=half-day" className="transition hover:text-coral-300">Half-Day Adventures</Link></li>
                 <li><Link href="/tours?category=multi-day" className="transition hover:text-coral-300">Multi-Day Adventures</Link></li>

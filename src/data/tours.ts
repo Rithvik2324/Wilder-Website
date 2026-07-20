@@ -112,7 +112,7 @@ export const tours: Tour[] = [
     "slug": "mayan-sky-zip-line-river-tubing-waterfall",
     "name": "Mayan Sky Zip Line + River Tubing + Waterfall",
     "category": "Full Day",
-    "price": 200,
+    "price": 225,
     "duration": "Full Day · 8–10 hrs",
     "durationHours": 9,
     "difficulty": "Moderate",

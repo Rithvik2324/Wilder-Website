@@ -252,8 +252,8 @@ export function Hero() {
             <Link href="/tours" className="btn btn-primary h-13 px-7 text-base">
               {site.hero.ctaPrimary} <ArrowRight className="h-5 w-5" />
             </Link>
-            <Link href="/contact" className="btn glass h-13 px-7 text-base text-white hover:bg-white hover:text-ink">
-              <MessageCircle className="h-5 w-5" /> {site.hero.ctaSecondary}
+            <Link href="/build-your-route" className="btn glass h-13 px-7 text-base text-white hover:bg-white hover:text-ink">
+              <MessageCircle className="h-5 w-5" /> Build a custom route
             </Link>
           </div>
 
