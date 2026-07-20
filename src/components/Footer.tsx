@@ -85,6 +85,7 @@ export function Footer() {
                 <li><Link href="/travelers-info" className="transition hover:text-coral-300">Travelers Info</Link></li>
                 <li><Link href="/contact" className="transition hover:text-coral-300">Contact</Link></li>
                 <li><Link href="/contact#faq" className="transition hover:text-coral-300">FAQs</Link></li>
+                <li><Link href="/terms-and-conditions" className="transition hover:text-coral-300">Terms & Conditions</Link></li>
               </ul>
             </div>
 

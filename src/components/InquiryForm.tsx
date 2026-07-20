@@ -1,7 +1,10 @@
 "use client";
 
-import { useState } from "react";
-import { Minus, Plus, Loader2, Check, CalendarDays, Users, MessageSquare, PartyPopper } from "lucide-react";
+import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
+import { Minus, Plus, Loader2, Check, CalendarDays, Users, MessageSquare, PartyPopper, X } from "lucide-react";
+import Link from "next/link";
+import { TermsAndConditions } from "@/components/TermsAndConditions";
 import { tours } from "@/data/tours";
 import { cn } from "@/lib/utils";
 
@@ -41,13 +44,35 @@ export function InquiryForm({
   const [company, setCompany] = useState(""); // honeypot — real users leave this empty
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [error, setError] = useState("");
+  const [termsOpen, setTermsOpen] = useState(false);
+  const [termsAccepted, setTermsAccepted] = useState(false);
 
   const today = new Date().toISOString().split("T")[0];
   const rowCls = cn("grid gap-4", !compact && "sm:grid-cols-2");
 
-  
-async function onSubmit(e: React.FormEvent) {
+  useEffect(() => {
+    if (!termsOpen) return;
+
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [termsOpen]);
+
+  function onSubmit(e: React.FormEvent) {
   e.preventDefault();
+
+  if (mode === "booking") {
+    setTermsAccepted(false);
+    setTermsOpen(true);
+    return;
+  }
+
+  void startPayment();
+}
+
+async function startPayment() {
 
   setState("loading");
   setError("");
@@ -96,6 +121,7 @@ async function onSubmit(e: React.FormEvent) {
     message,
     amount: selectedTour.price,
     orderId: data.orderId,
+    termsAccepted: true,
   })
 );
 
@@ -303,6 +329,62 @@ window.location.href = data.paymentUrl;
       <p className="text-center text-xs text-ink-faint">
         Secure payment powered by Belize Bank. Your booking will be confirmed after successful payment.
       </p>
+
+      {termsOpen && typeof document !== "undefined" && createPortal(
+        <div className="fixed inset-x-0 bottom-0 top-20 z-[2147483647] flex items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="terms-dialog-title">
+          <button
+            type="button"
+            aria-label="Close terms and conditions"
+            className="absolute inset-0 bg-ink/60 backdrop-blur-sm"
+            onClick={() => setTermsOpen(false)}
+          />
+          <div className="relative flex max-h-[calc(100dvh-6rem)] w-full max-w-3xl flex-col overflow-hidden rounded-3xl bg-sand-50 shadow-2xl">
+            <div className="flex items-start justify-between gap-4 border-b border-ink/10 bg-white px-6 py-5">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-widest text-coral-600">One last step</p>
+                <h2 id="terms-dialog-title" className="mt-1 font-display text-2xl font-bold text-ink">Terms & Conditions</h2>
+              </div>
+              <button type="button" onClick={() => setTermsOpen(false)} aria-label="Close" className="rounded-xl p-2 text-ink-soft transition hover:bg-sand-100 hover:text-ink">
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+
+            <div className="overflow-y-auto px-6 py-5">
+              <p className="mb-5 text-sm text-ink-soft">Please read these terms before continuing to secure payment.</p>
+              <TermsAndConditions />
+            </div>
+
+            <div className="border-t border-ink/10 bg-white px-6 py-5">
+              <label className="flex cursor-pointer items-start gap-3 text-sm font-semibold text-ink">
+                <input
+                  type="checkbox"
+                  checked={termsAccepted}
+                  onChange={(e) => setTermsAccepted(e.target.checked)}
+                  className="mt-0.5 h-4 w-4 rounded border-ink/30 accent-jungle-700"
+                />
+                <span>I have read and agree to the Terms & Conditions for everyone included in this booking.</span>
+              </label>
+              <div className="mt-4 flex flex-col-reverse gap-3 sm:flex-row sm:items-center sm:justify-between">
+                <Link href="/terms-and-conditions" target="_blank" className="text-center text-sm font-semibold text-jungle-700 underline underline-offset-4 hover:text-jungle-900">
+                  Open full terms in a new tab
+                </Link>
+                <button
+                  type="button"
+                  disabled={!termsAccepted || state === "loading"}
+                  onClick={() => {
+                    setTermsOpen(false);
+                    void startPayment();
+                  }}
+                  className="btn btn-primary justify-center disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {state === "loading" ? <Loader2 className="h-5 w-5 animate-spin" /> : "Continue to Secure Payment"}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>,
+        document.body,
+      )}
     </form>
   );
 }
