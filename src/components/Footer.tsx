@@ -112,7 +112,7 @@ export function Footer() {
 
           <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row">
             <p>© {year} {company.name}. All rights reserved.</p>
-            <p>Crafted with care in Placencia Village, Belize 🇧🇿 · Secure online payments coming soon</p>
+            <p>Crafted with care in Placencia Village, Belize 🇧🇿 · Secure payments powered by Belize Bank</p>
           </div>
         </div>
       </div>

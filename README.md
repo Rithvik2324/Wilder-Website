@@ -30,13 +30,13 @@ npm start
 - **Tours catalog** (`/tours`) — live client-side filtering by category, difficulty, interest and price, with sorting and a mobile filter drawer.
 - **Tour detail pages** (`/tours/[slug]`) — 23 real tours with hero, photo gallery + lightbox, highlights, itinerary timeline, what's included / to bring, meeting-point map, related tours, and a sticky booking widget (with a mobile booking bar).
 - **About, Travelers Info, Transfers, Contact** pages.
-- **Booking / contact / newsletter forms** — validated, with a honeypot, saved server-side. No payment is taken (see below).
+- **Booking / contact / newsletter forms** — validated, with a honeypot and saved server-side. Tour bookings proceed to secure payment through Belize Bank.
 - **SEO** — per-page metadata, OpenGraph/Twitter cards, JSON-LD (`TravelAgency`, `TouristTrip`, `BreadcrumbList`), `sitemap.xml`, `robots.txt`.
 - Accessible (keyboard focus rings, labelled controls, AA-contrast CTAs) and fully responsive.
 
 ## Payments
 
-As requested, **online payment processing is intentionally left out.** All booking and transfer forms collect an inquiry and save it; the UI states that the team confirms availability and details by email first ("Secure online payments coming soon"). To add payments later, wire a provider (Stripe, etc.) into `src/app/api/inquiry/route.ts` and the booking flow.
+Tour bookings use Belize Bank's hosted payment flow. The booking widget directs customers to payment and confirms the booking after a successful payment.
 
 ## Form submissions
 
