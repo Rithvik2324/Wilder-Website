@@ -53,7 +53,7 @@ export function TransferSlideshow() {
         <p className="text-lg font-semibold">
           $300
         </p>
-        <p className="text-sm mt-1">+$15 per each additional person</p>
+        <p className="text-sm mt-1">+$30 per each additional person</p>
       </div>
     </div>
   );

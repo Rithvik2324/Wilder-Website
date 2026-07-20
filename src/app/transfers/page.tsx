@@ -79,7 +79,7 @@ export default function TransfersPage() {
               <div className="mt-5 rounded-2xl border border-white/10 bg-white/5 p-5">
                 <div className="space-y-2 text-sm text-white/90">
                   <p><span className="font-semibold text-white">$300 USD:</span> One-way (1–4 Persons)</p>
-                  <p><span className="font-semibold text-white">$15 USD:</span> Each additional Person</p>
+                  <p><span className="font-semibold text-white">$30 USD:</span> Each additional Person</p>
                   <p><span className="font-semibold text-white">Free:</span> Children under 10 years of age</p>
                 </div>
 
